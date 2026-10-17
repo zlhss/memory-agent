@@ -1,0 +1,18 @@
+{
+  "tests_run": 40,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "modules": [
+    "test_contextual_memory_flow",
+    "test_ollama_timing",
+    "test_response_pipeline_mock",
+    "test_memory_v2_interface_mock",
+    "test_agent_memory_versions"
+  ],
+  "real_llm_calls": 0,
+  "original_files_unchanged": true,
+  "blocked_io": [],
+  "elapsed_seconds": 15.424693800000114,
+  "status": "PASS"
+}

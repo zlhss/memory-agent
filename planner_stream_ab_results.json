@@ -1,0 +1,911 @@
+{
+  "model": "qwen3-vl:8b",
+  "planner_prompt_sha256": "6ec2929150dbba7f4018703876ab46718ae88cb49582bb06e1f21323f6302e63",
+  "planner_prompt_chars": 474,
+  "http_timeout_seconds": 300,
+  "hard_stop_seconds": 60,
+  "telemetry_interval_seconds": 5,
+  "started_at": "2026-09-24T16:23:31.613273+08:00",
+  "experiments": {
+    "A": {
+      "think_parameter": "omitted"
+    },
+    "B": {
+      "think_parameter": false
+    }
+  },
+  "results": [
+    {
+      "status": "hard_stop_over_60s",
+      "http_status": 200,
+      "elapsed_seconds": 60.137,
+      "thinking_chars": 65,
+      "response_chars": 0,
+      "chunk_count": 24,
+      "json_valid": false,
+      "error": "Streaming request exceeded 60-second hard stop",
+      "experiment": "A",
+      "run": 1,
+      "think_parameter": null,
+      "chunks": [
+        {
+          "type": "chunk",
+          "chunk_number": 1,
+          "received_at": "2026-09-24T16:23:38.634027+08:00",
+          "elapsed_seconds": 6.78909,
+          "thinking_delta_chars": 1,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 2,
+          "received_at": "2026-09-24T16:23:38.736262+08:00",
+          "elapsed_seconds": 6.890791,
+          "thinking_delta_chars": 6,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 3,
+          "received_at": "2026-09-24T16:23:38.775944+08:00",
+          "elapsed_seconds": 6.930444,
+          "thinking_delta_chars": 6,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 4,
+          "received_at": "2026-09-24T16:23:39.811807+08:00",
+          "elapsed_seconds": 7.966548,
+          "thinking_delta_chars": 2,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 5,
+          "received_at": "2026-09-24T16:23:40.351718+08:00",
+          "elapsed_seconds": 8.506311,
+          "thinking_delta_chars": 2,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 6,
+          "received_at": "2026-09-24T16:23:40.788042+08:00",
+          "elapsed_seconds": 8.942803,
+          "thinking_delta_chars": 2,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 7,
+          "received_at": "2026-09-24T16:23:41.009944+08:00",
+          "elapsed_seconds": 9.164747,
+          "thinking_delta_chars": 2,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 8,
+          "received_at": "2026-09-24T16:23:41.440120+08:00",
+          "elapsed_seconds": 9.595063,
+          "thinking_delta_chars": 1,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 9,
+          "received_at": "2026-09-24T16:23:41.998903+08:00",
+          "elapsed_seconds": 10.153426,
+          "thinking_delta_chars": 2,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 10,
+          "received_at": "2026-09-24T16:23:42.994411+08:00",
+          "elapsed_seconds": 11.149126,
+          "thinking_delta_chars": 1,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 11,
+          "received_at": "2026-09-24T16:23:43.407775+08:00",
+          "elapsed_seconds": 11.562278,
+          "thinking_delta_chars": 2,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 12,
+          "received_at": "2026-09-24T16:23:44.345178+08:00",
+          "elapsed_seconds": 12.500095,
+          "thinking_delta_chars": 1,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 13,
+          "received_at": "2026-09-24T16:23:48.143710+08:00",
+          "elapsed_seconds": 16.298483,
+          "thinking_delta_chars": 2,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 14,
+          "received_at": "2026-09-24T16:23:56.389777+08:00",
+          "elapsed_seconds": 24.544514,
+          "thinking_delta_chars": 2,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 15,
+          "received_at": "2026-09-24T16:23:58.436511+08:00",
+          "elapsed_seconds": 26.591433,
+          "thinking_delta_chars": 6,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 16,
+          "received_at": "2026-09-24T16:23:59.368780+08:00",
+          "elapsed_seconds": 27.523654,
+          "thinking_delta_chars": 6,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 17,
+          "received_at": "2026-09-24T16:24:00.965108+08:00",
+          "elapsed_seconds": 29.119749,
+          "thinking_delta_chars": 2,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 18,
+          "received_at": "2026-09-24T16:24:06.121046+08:00",
+          "elapsed_seconds": 34.275725,
+          "thinking_delta_chars": 2,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 19,
+          "received_at": "2026-09-24T16:24:11.069831+08:00",
+          "elapsed_seconds": 39.224441,
+          "thinking_delta_chars": 10,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 20,
+          "received_at": "2026-09-24T16:24:13.585384+08:00",
+          "elapsed_seconds": 41.740756,
+          "thinking_delta_chars": 2,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 21,
+          "received_at": "2026-09-24T16:24:18.264949+08:00",
+          "elapsed_seconds": 46.419678,
+          "thinking_delta_chars": 2,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 22,
+          "received_at": "2026-09-24T16:24:19.308770+08:00",
+          "elapsed_seconds": 47.463481,
+          "thinking_delta_chars": 1,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 23,
+          "received_at": "2026-09-24T16:24:20.570065+08:00",
+          "elapsed_seconds": 48.724732,
+          "thinking_delta_chars": 1,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 24,
+          "received_at": "2026-09-24T16:24:26.391269+08:00",
+          "elapsed_seconds": 54.545865,
+          "thinking_delta_chars": 1,
+          "response_delta_chars": 0
+        }
+      ],
+      "telemetry": [
+        {
+          "sampled_at": "2026-09-24T16:23:31.631371+08:00",
+          "elapsed_seconds": 0.011,
+          "accumulated_thinking_chars": 0,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 6,
+              "vram_used_mib": 964,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 1890,
+              "power_draw_watts": 14.42,
+              "temperature_c": 52
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:23:36.641646+08:00",
+          "elapsed_seconds": 5.021,
+          "accumulated_thinking_chars": 0,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 44,
+              "vram_used_mib": 5276,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2745,
+              "power_draw_watts": 17.74,
+              "temperature_c": 54
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:23:41.636081+08:00",
+          "elapsed_seconds": 10.015,
+          "accumulated_thinking_chars": 22,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 96,
+              "vram_used_mib": 7638,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 31.67,
+              "temperature_c": 58
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:23:46.657954+08:00",
+          "elapsed_seconds": 15.037,
+          "accumulated_thinking_chars": 28,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 100,
+              "vram_used_mib": 7637,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 28.97,
+              "temperature_c": 57
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:23:51.670709+08:00",
+          "elapsed_seconds": 20.05,
+          "accumulated_thinking_chars": 30,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 100,
+              "vram_used_mib": 7638,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 28.99,
+              "temperature_c": 58
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:23:56.678469+08:00",
+          "elapsed_seconds": 25.057,
+          "accumulated_thinking_chars": 32,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 93,
+              "vram_used_mib": 7638,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 29.44,
+              "temperature_c": 58
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:24:01.627641+08:00",
+          "elapsed_seconds": 30.007,
+          "accumulated_thinking_chars": 46,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 100,
+              "vram_used_mib": 7638,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 29.74,
+              "temperature_c": 59
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:24:06.682359+08:00",
+          "elapsed_seconds": 35.061,
+          "accumulated_thinking_chars": 48,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 100,
+              "vram_used_mib": 7656,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 29.18,
+              "temperature_c": 59
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:24:11.628649+08:00",
+          "elapsed_seconds": 40.008,
+          "accumulated_thinking_chars": 58,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 100,
+              "vram_used_mib": 7641,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 30.25,
+              "temperature_c": 59
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:24:16.657645+08:00",
+          "elapsed_seconds": 45.037,
+          "accumulated_thinking_chars": 60,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 100,
+              "vram_used_mib": 7647,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 29.62,
+              "temperature_c": 61
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:24:21.622978+08:00",
+          "elapsed_seconds": 50.002,
+          "accumulated_thinking_chars": 64,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 100,
+              "vram_used_mib": 7647,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 29.53,
+              "temperature_c": 59
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:24:26.630800+08:00",
+          "elapsed_seconds": 55.01,
+          "accumulated_thinking_chars": 65,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 97,
+              "vram_used_mib": 7640,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 30.42,
+              "temperature_c": 59
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:24:31.676177+08:00",
+          "elapsed_seconds": 60.055,
+          "accumulated_thinking_chars": 65,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 100,
+              "vram_used_mib": 7673,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 29.33,
+              "temperature_c": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "status": "hard_stop_over_60s",
+      "http_status": 200,
+      "elapsed_seconds": 60.118,
+      "thinking_chars": 25,
+      "response_chars": 0,
+      "chunk_count": 11,
+      "json_valid": false,
+      "error": "Streaming request exceeded 60-second hard stop",
+      "experiment": "B",
+      "run": 1,
+      "think_parameter": false,
+      "chunks": [
+        {
+          "type": "chunk",
+          "chunk_number": 1,
+          "received_at": "2026-09-24T16:24:43.820395+08:00",
+          "elapsed_seconds": 7.541428,
+          "thinking_delta_chars": 2,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 2,
+          "received_at": "2026-09-24T16:24:49.480734+08:00",
+          "elapsed_seconds": 13.202234,
+          "thinking_delta_chars": 6,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 3,
+          "received_at": "2026-09-24T16:24:51.173889+08:00",
+          "elapsed_seconds": 14.895158,
+          "thinking_delta_chars": 2,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 4,
+          "received_at": "2026-09-24T16:24:56.780078+08:00",
+          "elapsed_seconds": 20.501335,
+          "thinking_delta_chars": 2,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 5,
+          "received_at": "2026-09-24T16:24:59.304912+08:00",
+          "elapsed_seconds": 23.02707,
+          "thinking_delta_chars": 2,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 6,
+          "received_at": "2026-09-24T16:25:02.198076+08:00",
+          "elapsed_seconds": 25.919252,
+          "thinking_delta_chars": 2,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 7,
+          "received_at": "2026-09-24T16:25:08.361362+08:00",
+          "elapsed_seconds": 32.082625,
+          "thinking_delta_chars": 1,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 8,
+          "received_at": "2026-09-24T16:25:18.632905+08:00",
+          "elapsed_seconds": 42.354153,
+          "thinking_delta_chars": 2,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 9,
+          "received_at": "2026-09-24T16:25:26.554116+08:00",
+          "elapsed_seconds": 50.275518,
+          "thinking_delta_chars": 2,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 10,
+          "received_at": "2026-09-24T16:25:32.306218+08:00",
+          "elapsed_seconds": 56.027282,
+          "thinking_delta_chars": 2,
+          "response_delta_chars": 0
+        },
+        {
+          "type": "chunk",
+          "chunk_number": 11,
+          "received_at": "2026-09-24T16:25:36.144826+08:00",
+          "elapsed_seconds": 59.866042,
+          "thinking_delta_chars": 2,
+          "response_delta_chars": 0
+        }
+      ],
+      "telemetry": [
+        {
+          "sampled_at": "2026-09-24T16:24:36.064754+08:00",
+          "elapsed_seconds": 0.01,
+          "accumulated_thinking_chars": 0,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 14,
+              "vram_used_mib": 7676,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 780,
+              "power_draw_watts": 19.07,
+              "temperature_c": 56
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:24:41.111652+08:00",
+          "elapsed_seconds": 5.057,
+          "accumulated_thinking_chars": 0,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 100,
+              "vram_used_mib": 7685,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2745,
+              "power_draw_watts": 29.49,
+              "temperature_c": 61
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:24:46.077840+08:00",
+          "elapsed_seconds": 10.023,
+          "accumulated_thinking_chars": 2,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 100,
+              "vram_used_mib": 7670,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 29.46,
+              "temperature_c": 60
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:24:51.107801+08:00",
+          "elapsed_seconds": 15.053,
+          "accumulated_thinking_chars": 8,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 100,
+              "vram_used_mib": 7673,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 30.06,
+              "temperature_c": 61
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:24:56.102819+08:00",
+          "elapsed_seconds": 20.048,
+          "accumulated_thinking_chars": 10,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 100,
+              "vram_used_mib": 7674,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 29.44,
+              "temperature_c": 60
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:25:01.057998+08:00",
+          "elapsed_seconds": 25.004,
+          "accumulated_thinking_chars": 14,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 100,
+              "vram_used_mib": 7672,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 29.66,
+              "temperature_c": 60
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:25:06.094556+08:00",
+          "elapsed_seconds": 30.04,
+          "accumulated_thinking_chars": 16,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 100,
+              "vram_used_mib": 7670,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 29.61,
+              "temperature_c": 60
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:25:11.066236+08:00",
+          "elapsed_seconds": 35.012,
+          "accumulated_thinking_chars": 17,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 100,
+              "vram_used_mib": 7670,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 29.5,
+              "temperature_c": 60
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:25:16.072394+08:00",
+          "elapsed_seconds": 40.018,
+          "accumulated_thinking_chars": 17,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 100,
+              "vram_used_mib": 7683,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 29.66,
+              "temperature_c": 60
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:25:21.102252+08:00",
+          "elapsed_seconds": 45.048,
+          "accumulated_thinking_chars": 19,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 100,
+              "vram_used_mib": 7675,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 29.5,
+              "temperature_c": 60
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:25:26.069690+08:00",
+          "elapsed_seconds": 50.015,
+          "accumulated_thinking_chars": 19,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 100,
+              "vram_used_mib": 7674,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 29.82,
+              "temperature_c": 60
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:25:31.083988+08:00",
+          "elapsed_seconds": 55.03,
+          "accumulated_thinking_chars": 21,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 100,
+              "vram_used_mib": 7675,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 29.79,
+              "temperature_c": 60
+            }
+          ]
+        },
+        {
+          "sampled_at": "2026-09-24T16:25:36.092024+08:00",
+          "elapsed_seconds": 60.038,
+          "accumulated_thinking_chars": 23,
+          "accumulated_response_chars": 0,
+          "gpu": [
+            {
+              "index": 0,
+              "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+              "utilization_percent": 100,
+              "vram_used_mib": 7670,
+              "vram_total_mib": 8188,
+              "sm_clock_mhz": 2730,
+              "power_draw_watts": 29.67,
+              "temperature_c": 61
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "between_experiment_cooldown": [
+    {
+      "sampled_at": "2026-09-24T16:24:31.807762+08:00",
+      "gpu": [
+        {
+          "index": 0,
+          "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+          "utilization_percent": 100,
+          "vram_used_mib": 7673,
+          "vram_total_mib": 8188,
+          "sm_clock_mhz": 2730,
+          "power_draw_watts": 29.35,
+          "temperature_c": 60
+        }
+      ]
+    },
+    {
+      "sampled_at": "2026-09-24T16:24:32.884475+08:00",
+      "gpu": [
+        {
+          "index": 0,
+          "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+          "utilization_percent": 100,
+          "vram_used_mib": 7675,
+          "vram_total_mib": 8188,
+          "sm_clock_mhz": 2730,
+          "power_draw_watts": 29.35,
+          "temperature_c": 60
+        }
+      ]
+    },
+    {
+      "sampled_at": "2026-09-24T16:24:33.943815+08:00",
+      "gpu": [
+        {
+          "index": 0,
+          "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+          "utilization_percent": 100,
+          "vram_used_mib": 7675,
+          "vram_total_mib": 8188,
+          "sm_clock_mhz": 2730,
+          "power_draw_watts": 29.65,
+          "temperature_c": 59
+        }
+      ]
+    },
+    {
+      "sampled_at": "2026-09-24T16:24:35.011993+08:00",
+      "gpu": [
+        {
+          "index": 0,
+          "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+          "utilization_percent": 5,
+          "vram_used_mib": 7676,
+          "vram_total_mib": 8188,
+          "sm_clock_mhz": 2730,
+          "power_draw_watts": 23.15,
+          "temperature_c": 58
+        }
+      ]
+    },
+    {
+      "sampled_at": "2026-09-24T16:24:36.053088+08:00",
+      "gpu": [
+        {
+          "index": 0,
+          "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+          "utilization_percent": 14,
+          "vram_used_mib": 7676,
+          "vram_total_mib": 8188,
+          "sm_clock_mhz": 780,
+          "power_draw_watts": 20.37,
+          "temperature_c": 56
+        }
+      ]
+    }
+  ],
+  "finished_at": "2026-09-24T16:25:36.173991+08:00",
+  "summaries": [
+    {
+      "experiment": "A",
+      "attempted": 1,
+      "completed": 0,
+      "over_60s": 1,
+      "average_latency_seconds": 60.137,
+      "median_latency_seconds": 60.137,
+      "p95_latency_seconds": 60.137,
+      "max_latency_seconds": 60.137,
+      "thinking_chars": 65,
+      "response_chars": 0,
+      "json_valid": 0,
+      "timeout_count": 0,
+      "error_count": 0
+    },
+    {
+      "experiment": "B",
+      "attempted": 1,
+      "completed": 0,
+      "over_60s": 1,
+      "average_latency_seconds": 60.118,
+      "median_latency_seconds": 60.118,
+      "p95_latency_seconds": 60.118,
+      "max_latency_seconds": 60.118,
+      "thinking_chars": 25,
+      "response_chars": 0,
+      "json_valid": 0,
+      "timeout_count": 0,
+      "error_count": 0
+    }
+  ]
+}

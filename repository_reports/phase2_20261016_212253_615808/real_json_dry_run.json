@@ -1,0 +1,28 @@
+{
+  "status": "DRY_RUN_PASSED",
+  "dry_run": true,
+  "source_path": "D:\\python\\project\\memory-agent\\memories.json",
+  "target_path": "D:\\python\\project\\memory-agent\\repository_reports\\phase2_20261016_212253_615808\\real_dry_run_NOT_CREATED.sqlite3",
+  "source_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "source_sha256_after": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "source_unchanged": true,
+  "sender_count": 0,
+  "fact_count": 0,
+  "per_sender_counts": {},
+  "preflight_passed": true,
+  "verification": {},
+  "integrity_check": {
+    "results": [],
+    "passed": null
+  },
+  "transaction": {
+    "committed": false,
+    "rollback_verified": null
+  },
+  "published": false,
+  "publication_method": "atomic_hard_link_no_replace",
+  "staging_cleanup_passed": null,
+  "empty_sender_count": 0,
+  "duplicate_fact_occurrences": 0,
+  "elapsed_seconds": 0.0007980999998835614
+}

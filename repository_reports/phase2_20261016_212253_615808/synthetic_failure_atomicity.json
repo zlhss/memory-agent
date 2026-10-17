@@ -1,0 +1,43 @@
+{
+  "status": "FAILED",
+  "dry_run": false,
+  "source_path": "C:\\Users\\33167\\AppData\\Local\\Temp\\migration-report-example-4r7u813b\\memories.json",
+  "target_path": "C:\\Users\\33167\\AppData\\Local\\Temp\\migration-report-example-4r7u813b\\failed.sqlite3",
+  "source_sha256": "c88cc867692fed9a7a53f8eae687f299ea1cd39fc266eb477f09da1fe5cbd7e9",
+  "source_sha256_after": "c88cc867692fed9a7a53f8eae687f299ea1cd39fc266eb477f09da1fe5cbd7e9",
+  "source_unchanged": true,
+  "sender_count": 3,
+  "fact_count": 5,
+  "per_sender_counts": {
+    "zhangsan": 0,
+    "lisi": 3,
+    "王老师": 2
+  },
+  "preflight_passed": true,
+  "verification": {},
+  "integrity_check": {
+    "results": [],
+    "passed": null
+  },
+  "transaction": {
+    "committed": false,
+    "rollback_verified": true
+  },
+  "published": false,
+  "publication_method": "atomic_hard_link_no_replace",
+  "staging_cleanup_passed": true,
+  "empty_sender_count": 1,
+  "duplicate_fact_occurrences": 1,
+  "error": {
+    "type": "RuntimeError",
+    "message": "Injected third-insert failure for atomicity evidence"
+  },
+  "elapsed_seconds": 0.005200399999921501,
+  "atomicity_observations": {
+    "insert_attempts": 3,
+    "facts_inside_transaction_before_error": 2,
+    "facts_visible_to_other_connection_before_error": 0,
+    "facts_after_rollback": 0,
+    "senders_after_rollback": 0
+  }
+}

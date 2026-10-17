@@ -1,0 +1,20 @@
+{
+  "warning": "Internal key; do not show during blind review.",
+  "cases": [
+    {"case_id": "personal_dev_01_goal_sign_language_certificate", "reply_a": "FULL", "reply_b": "MEMORY_ONLY"},
+    {"case_id": "personal_dev_02_coffee_preference", "reply_a": "FULL", "reply_b": "MEMORY_ONLY"},
+    {"case_id": "personal_dev_03_updated_remote_work_status", "reply_a": "FULL", "reply_b": "MEMORY_ONLY"},
+    {"case_id": "personal_dev_04_sender_food_isolation", "reply_a": "MEMORY_ONLY", "reply_b": "FULL"},
+    {"case_id": "personal_dev_05_no_need_for_personalization", "reply_a": "MEMORY_ONLY", "reply_b": "FULL"},
+    {"case_id": "personal_dev_06_relevant_but_not_overused", "reply_a": "FULL", "reply_b": "MEMORY_ONLY"},
+    {"case_id": "personal_dev_07_goal_link_rain_training", "reply_a": "FULL", "reply_b": "MEMORY_ONLY"},
+    {"case_id": "personal_dev_08_emotion_oral_history_project", "reply_a": "MEMORY_ONLY", "reply_b": "FULL"},
+    {"case_id": "personal_dev_09_simple_daily_chat", "reply_a": "FULL", "reply_b": "MEMORY_ONLY"},
+    {"case_id": "personal_dev_10_advice_written_agenda", "reply_a": "MEMORY_ONLY", "reply_b": "FULL"},
+    {"case_id": "personal_dev_11_knowledge_question", "reply_a": "FULL", "reply_b": "MEMORY_ONLY"},
+    {"case_id": "personal_dev_12_working_memory_reference", "reply_a": "FULL", "reply_b": "MEMORY_ONLY"},
+    {"case_id": "personal_dev_13_short_colloquial_style", "reply_a": "FULL", "reply_b": "MEMORY_ONLY"},
+    {"case_id": "personal_dev_14_expressive_style_without_fact_change", "reply_a": "FULL", "reply_b": "MEMORY_ONLY"},
+    {"case_id": "personal_dev_15_mismatched_style_samples", "reply_a": "FULL", "reply_b": "MEMORY_ONLY"}
+  ]
+}

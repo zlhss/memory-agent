@@ -1,0 +1,411 @@
+[
+  {
+    "case_id": "personal_dev_01_goal_sign_language_certificate",
+    "category": "long_term_goal",
+    "sender_id": "personal_dev_sender_01",
+    "long_term_memories": [
+      "联系人计划在今年十月参加手语翻译资格考试",
+      "联系人每周三晚上参加社区合唱排练"
+    ],
+    "sentinel_sender_id": "personal_dev_sentinel_01",
+    "sentinel_memories": [
+      "联系人计划明年参加潜水证考试",
+      "联系人每周学习西班牙语"
+    ],
+    "working_memory": [],
+    "style_examples": [
+      {"incoming": "我有点没信心了", "user_reply": "先别急，拆小点练，稳住。"},
+      {"incoming": "今天练得不太顺", "user_reply": "正常，卡住就慢一点来。"},
+      {"incoming": "要不要继续呀", "user_reply": "继续，先把眼前这一小段拿下。"}
+    ],
+    "current_message": "最近练手语总在指拼上卡住，有点想放弃。",
+    "required_facts": ["今年十月的手语翻译资格考试目标"],
+    "forbidden_facts": ["潜水证考试", "学习西班牙语", "社区合唱排练"],
+    "should_personalize": true,
+    "max_personal_facts": 1,
+    "style_expectations": {"traits": ["简短", "口语化", "先安抚再给一步建议"], "avoid": ["长篇说教"]},
+    "notes": "目标应自然成为鼓励和建议的背景，而不是机械复述所有记忆。"
+  },
+  {
+    "case_id": "personal_dev_02_coffee_preference",
+    "category": "preference",
+    "sender_id": "personal_dev_sender_02",
+    "long_term_memories": [
+      "联系人喝咖啡时只加燕麦奶并且不加糖",
+      "联系人周末喜欢逛旧货市场"
+    ],
+    "sentinel_sender_id": "personal_dev_sentinel_02",
+    "sentinel_memories": [
+      "联系人喝咖啡时喜欢全脂牛奶和双份糖",
+      "联系人不喝含咖啡因饮料"
+    ],
+    "working_memory": [],
+    "style_examples": [
+      {"incoming": "下午想喝点什么", "user_reply": "来杯顺口的就行，不用太甜。"},
+      {"incoming": "要不要点咖啡", "user_reply": "可以，清爽点儿。"},
+      {"incoming": "今天好困", "user_reply": "整一杯，先续上。"}
+    ],
+    "current_message": "下午开会前我想带杯咖啡提提神，你觉得点什么合适？",
+    "required_facts": ["燕麦奶", "不加糖"],
+    "forbidden_facts": ["全脂牛奶", "双份糖", "不喝咖啡因", "旧货市场"],
+    "should_personalize": true,
+    "max_personal_facts": 1,
+    "style_expectations": {"traits": ["轻松", "简洁"], "avoid": ["过度解释咖啡知识"]},
+    "notes": "偏好应直接影响推荐，且两个限制都不能丢失。"
+  },
+  {
+    "case_id": "personal_dev_03_updated_remote_work_status",
+    "category": "updated_status",
+    "sender_id": "personal_dev_sender_03",
+    "long_term_memories": [
+      "联系人现在长期在家远程办公",
+      "联系人养了一缸热带鱼"
+    ],
+    "sentinel_sender_id": "personal_dev_sentinel_03",
+    "sentinel_memories": [
+      "联系人每天去城南园区办公室上班",
+      "联系人最近开始夜班工作"
+    ],
+    "working_memory": [],
+    "style_examples": [
+      {"incoming": "明早开个会？", "user_reply": "行，时间发我就好。"},
+      {"incoming": "九点方便吗", "user_reply": "方便，直接线上见。"},
+      {"incoming": "要不要改时间", "user_reply": "不用，这个点可以。"}
+    ],
+    "current_message": "明早九点线上碰一下方便吗？",
+    "required_facts": ["当前长期在家远程办公，因此线上九点不涉及去办公室通勤"],
+    "forbidden_facts": ["仍然每天去城南园区办公室", "夜班工作", "热带鱼"],
+    "should_personalize": true,
+    "max_personal_facts": 1,
+    "style_expectations": {"traits": ["直接确认", "简短"], "avoid": ["虚构日程冲突"]},
+    "notes": "只允许使用更新后的工作状态，不能引用 sentinel 的旧办公状态。"
+  },
+  {
+    "case_id": "personal_dev_04_sender_food_isolation",
+    "category": "sender_isolation",
+    "sender_id": "personal_dev_sender_04",
+    "long_term_memories": [
+      "联系人吃素但可以接受奶制品",
+      "联系人喜欢桌游"
+    ],
+    "sentinel_sender_id": "personal_dev_sentinel_04",
+    "sentinel_memories": [
+      "联系人对麸质过敏",
+      "联系人最喜欢烤羊肉"
+    ],
+    "working_memory": [],
+    "style_examples": [
+      {"incoming": "周末吃什么", "user_reply": "找个大家都能吃的，省心。"},
+      {"incoming": "火锅行吗", "user_reply": "行啊，菜选多点就好。"},
+      {"incoming": "你来挑店", "user_reply": "可以，我看看附近的。"}
+    ],
+    "current_message": "周末聚餐你觉得选烧烤还是火锅？",
+    "required_facts": ["联系人吃素但可接受奶制品"],
+    "forbidden_facts": ["麸质过敏", "喜欢烤羊肉", "桌游"],
+    "should_personalize": true,
+    "max_personal_facts": 1,
+    "style_expectations": {"traits": ["自然建议", "不生硬点名记忆"], "avoid": ["医疗化措辞"]},
+    "notes": "推荐应符合目标 sender 饮食事实，绝不能混入 sentinel 饮食信息。"
+  },
+  {
+    "case_id": "personal_dev_05_no_need_for_personalization",
+    "category": "no_personalization_needed",
+    "sender_id": "personal_dev_sender_05",
+    "long_term_memories": [
+      "联系人收藏老式车票",
+      "联系人每月参加一次观鸟活动"
+    ],
+    "sentinel_sender_id": "personal_dev_sentinel_05",
+    "sentinel_memories": [
+      "联系人讨厌下雨天",
+      "联系人正在装修厨房"
+    ],
+    "working_memory": [],
+    "style_examples": [
+      {"incoming": "今天风好大", "user_reply": "真的，出门都费劲。"},
+      {"incoming": "外面好冷", "user_reply": "是啊，赶紧回屋。"},
+      {"incoming": "堵车堵疯了", "user_reply": "太折磨了，慢慢挪吧。"}
+    ],
+    "current_message": "今天路上堵得也太夸张了。",
+    "required_facts": [],
+    "forbidden_facts": ["收藏老式车票", "观鸟活动", "讨厌下雨", "装修厨房"],
+    "should_personalize": false,
+    "max_personal_facts": 0,
+    "style_expectations": {"traits": ["日常口语", "简短共情"], "avoid": ["强行关联兴趣"]},
+    "notes": "正确行为是自然回应当下，不展示记忆能力。"
+  },
+  {
+    "case_id": "personal_dev_06_relevant_but_not_overused",
+    "category": "avoid_overpersonalization",
+    "sender_id": "personal_dev_sender_06",
+    "long_term_memories": [
+      "联系人不喜欢嘈杂拥挤的见面场所",
+      "联系人正在学习陶艺",
+      "联系人每周给姐姐打电话"
+    ],
+    "sentinel_sender_id": "personal_dev_sentinel_06",
+    "sentinel_memories": [
+      "联系人喜欢热闹的音乐酒吧",
+      "联系人正在学习木工"
+    ],
+    "working_memory": [],
+    "style_examples": [
+      {"incoming": "去哪儿聊聊", "user_reply": "找个安静点的地方吧。"},
+      {"incoming": "约咖啡店？", "user_reply": "可以，别太吵就行。"},
+      {"incoming": "就聊半小时", "user_reply": "没问题，挑个近的。"}
+    ],
+    "current_message": "想找个地方聊半小时，你觉得约哪儿合适？",
+    "required_facts": ["偏好安静、不拥挤的见面场所"],
+    "forbidden_facts": ["学习陶艺", "每周给姐姐打电话", "喜欢音乐酒吧", "学习木工"],
+    "should_personalize": true,
+    "max_personal_facts": 1,
+    "style_expectations": {"traits": ["简洁建议"], "avoid": ["罗列个人档案"]},
+    "notes": "只用一个真正相关的偏好，其他长期事实不应出现。"
+  },
+  {
+    "case_id": "personal_dev_07_goal_link_rain_training",
+    "category": "natural_goal_link",
+    "sender_id": "personal_dev_sender_07",
+    "long_term_memories": [
+      "联系人计划在明年五月完成第一次半程马拉松",
+      "联系人喜欢看建筑纪录片"
+    ],
+    "sentinel_sender_id": "personal_dev_sentinel_07",
+    "sentinel_memories": [
+      "联系人正在准备铁人三项比赛",
+      "联系人膝盖刚做完手术"
+    ],
+    "working_memory": [],
+    "style_examples": [
+      {"incoming": "今天没法出门跑", "user_reply": "那就室内顶一下，别断节奏。"},
+      {"incoming": "训练要不要停", "user_reply": "不用硬扛，换个方式练。"},
+      {"incoming": "这周状态一般", "user_reply": "稳住就行，慢慢加回来。"}
+    ],
+    "current_message": "这周一直下雨，跑步训练怎么安排比较好？",
+    "required_facts": ["明年五月首次半程马拉松目标"],
+    "forbidden_facts": ["铁人三项", "膝盖手术", "建筑纪录片"],
+    "should_personalize": true,
+    "max_personal_facts": 1,
+    "style_expectations": {"traits": ["务实", "不强迫"], "avoid": ["医疗诊断"]},
+    "notes": "建议应自然服务于训练目标，但不能引入 sentinel 的伤病。"
+  },
+  {
+    "case_id": "personal_dev_08_emotion_oral_history_project",
+    "category": "emotional_context",
+    "sender_id": "personal_dev_sender_08",
+    "long_term_memories": [
+      "联系人正在制作一部社区口述史纪录片",
+      "联系人习惯周日整理房间"
+    ],
+    "sentinel_sender_id": "personal_dev_sentinel_08",
+    "sentinel_memories": [
+      "联系人正在写一部长篇科幻小说",
+      "联系人刚获得摄影比赛奖项"
+    ],
+    "working_memory": [],
+    "style_examples": [
+      {"incoming": "今天挺受打击的", "user_reply": "唉，先缓缓，我在。"},
+      {"incoming": "事情突然黄了", "user_reply": "这一下确实难受，别急着怪自己。"},
+      {"incoming": "我有点撑不住", "user_reply": "先歇口气，晚点再想下一步。"}
+    ],
+    "current_message": "采访对象临时反悔了，我有点受打击。",
+    "required_facts": ["这是社区口述史纪录片的采访受阻"],
+    "forbidden_facts": ["科幻小说", "摄影比赛获奖", "周日整理房间"],
+    "should_personalize": true,
+    "max_personal_facts": 1,
+    "style_expectations": {"traits": ["先共情", "不过度解决问题"], "avoid": ["轻描淡写"]},
+    "notes": "回复应理解项目背景，同时尊重当下情绪。"
+  },
+  {
+    "case_id": "personal_dev_09_simple_daily_chat",
+    "category": "simple_daily_chat",
+    "sender_id": "personal_dev_sender_09",
+    "long_term_memories": [
+      "联系人喜欢修复旧钟表",
+      "联系人每年秋天去看候鸟迁徙"
+    ],
+    "sentinel_sender_id": "personal_dev_sentinel_09",
+    "sentinel_memories": [
+      "联系人最近睡眠不足",
+      "联系人养了两只兔子"
+    ],
+    "working_memory": [],
+    "style_examples": [
+      {"incoming": "刚到家", "user_reply": "辛苦了，先瘫会儿。"},
+      {"incoming": "今天好累", "user_reply": "先歇，别急着干别的。"},
+      {"incoming": "不想动了", "user_reply": "那就不动，缓一缓。"}
+    ],
+    "current_message": "刚把快递搬回来，累得完全不想动。",
+    "required_facts": [],
+    "forbidden_facts": ["修复旧钟表", "候鸟迁徙", "睡眠不足", "两只兔子"],
+    "should_personalize": false,
+    "max_personal_facts": 0,
+    "style_expectations": {"traits": ["轻松共情", "短回复"], "avoid": ["强行提供完整计划"]},
+    "notes": "只需要自然日常回应；Full 可以像历史表达，但不能带入历史事实。"
+  },
+  {
+    "case_id": "personal_dev_10_advice_written_agenda",
+    "category": "advice_request",
+    "sender_id": "personal_dev_sender_10",
+    "long_term_memories": [
+      "联系人在重要沟通前习惯先写一页提纲",
+      "联系人喜欢在午休时散步"
+    ],
+    "sentinel_sender_id": "personal_dev_sentinel_10",
+    "sentinel_memories": [
+      "联系人习惯即兴参加重要会议",
+      "联系人正在申请内部转岗"
+    ],
+    "working_memory": [],
+    "style_examples": [
+      {"incoming": "明天要聊个重要的事", "user_reply": "先列三点，心里会稳很多。"},
+      {"incoming": "不知道怎么开口", "user_reply": "把最想说的那句先写下来。"},
+      {"incoming": "要准备什么", "user_reply": "目标、问题、下一步，够用了。"}
+    ],
+    "current_message": "明天要跟新主管做第一次一对一，我该准备些什么？",
+    "required_facts": ["重要沟通前先写一页提纲的习惯"],
+    "forbidden_facts": ["即兴参加会议", "申请内部转岗", "午休散步"],
+    "should_personalize": true,
+    "max_personal_facts": 1,
+    "style_expectations": {"traits": ["条理清楚", "简洁可执行"], "avoid": ["臆测主管态度"]},
+    "notes": "建议应贴合联系人已有准备习惯。"
+  },
+  {
+    "case_id": "personal_dev_11_knowledge_question",
+    "category": "knowledge_explanation",
+    "sender_id": "personal_dev_sender_11",
+    "long_term_memories": [
+      "联系人经常做无乳糖甜点",
+      "联系人收藏各地博物馆门票"
+    ],
+    "sentinel_sender_id": "personal_dev_sentinel_11",
+    "sentinel_memories": [
+      "联系人经营一家面包店",
+      "联系人对小麦过敏"
+    ],
+    "working_memory": [],
+    "style_examples": [
+      {"incoming": "这个原理是啥", "user_reply": "简单说，就是条件变了，结果也跟着变。"},
+      {"incoming": "能讲明白点吗", "user_reply": "可以，先抓最关键的一步。"},
+      {"incoming": "我没看懂", "user_reply": "没事，换个直白的说法。"}
+    ],
+    "current_message": "为什么有些酸面包里面会形成特别大的气孔？",
+    "required_facts": [],
+    "forbidden_facts": ["无乳糖甜点", "博物馆门票", "经营面包店", "小麦过敏"],
+    "should_personalize": false,
+    "max_personal_facts": 0,
+    "style_expectations": {"traits": ["通俗解释", "不卖弄"], "avoid": ["虚构个人经验"]},
+    "notes": "知识解释不应借机展示个人记忆。"
+  },
+  {
+    "case_id": "personal_dev_12_working_memory_reference",
+    "category": "working_memory_reference",
+    "sender_id": "personal_dev_sender_12",
+    "long_term_memories": [
+      "联系人计划在下个月发布自然教育播客的第一集",
+      "联系人每周五照顾邻居的猫"
+    ],
+    "sentinel_sender_id": "personal_dev_sentinel_12",
+    "sentinel_memories": [
+      "联系人正在制作旅行视频",
+      "联系人下周要提交毕业论文"
+    ],
+    "working_memory": [
+      {"role": "user", "content": "我把片头音乐剪完了，采访音频还没整理。"},
+      {"role": "assistant", "content": "那下一步可以先把采访音频分段。"}
+    ],
+    "style_examples": [
+      {"incoming": "今晚可能做不完", "user_reply": "先做最卡进度的，剩下的明天接。"},
+      {"incoming": "这个有点赶", "user_reply": "先排优先级，别一口气全扛。"},
+      {"incoming": "怕影响进度", "user_reply": "看关键节点，今晚先保住第一步。"}
+    ],
+    "current_message": "这个今晚弄不完会不会影响进度？",
+    "required_facts": ["这个指采访音频分段整理", "播客第一集计划下个月发布"],
+    "forbidden_facts": ["旅行视频", "毕业论文", "照顾邻居的猫"],
+    "should_personalize": true,
+    "max_personal_facts": 2,
+    "style_expectations": {"traits": ["安抚", "给出优先级建议"], "avoid": ["假装知道具体发布日期"]},
+    "notes": "需要结合最近对话解析指代，再利用长期发布目标。"
+  },
+  {
+    "case_id": "personal_dev_13_short_colloquial_style",
+    "category": "short_colloquial_style",
+    "sender_id": "personal_dev_sender_13",
+    "long_term_memories": [
+      "联系人后天参加驾照道路考试",
+      "联系人喜欢做拼图"
+    ],
+    "sentinel_sender_id": "personal_dev_sentinel_13",
+    "sentinel_memories": [
+      "联系人下周参加教师资格考试",
+      "联系人已经拿到驾照"
+    ],
+    "working_memory": [],
+    "style_examples": [
+      {"incoming": "我有点慌", "user_reply": "别慌，稳着来。"},
+      {"incoming": "怕搞砸", "user_reply": "不会，按平时的来。"},
+      {"incoming": "怎么办啊", "user_reply": "先稳住，问题不大。"}
+    ],
+    "current_message": "一想到后天路考我就紧张。",
+    "required_facts": ["后天参加驾照道路考试"],
+    "forbidden_facts": ["教师资格考试", "已经拿到驾照", "拼图"],
+    "should_personalize": true,
+    "max_personal_facts": 1,
+    "style_expectations": {"traits": ["短句", "口语化", "稳住式安慰"], "avoid": ["冗长考试攻略"]},
+    "notes": "主要观察 Full 是否更接近短句习惯，同时不改变建议。"
+  },
+  {
+    "case_id": "personal_dev_14_expressive_style_without_fact_change",
+    "category": "expressive_style",
+    "sender_id": "personal_dev_sender_14",
+    "long_term_memories": [
+      "联系人参与制作的独立游戏试玩版计划本周五上线",
+      "联系人平时喜欢喝乌龙茶"
+    ],
+    "sentinel_sender_id": "personal_dev_sentinel_14",
+    "sentinel_memories": [
+      "联系人的独立游戏已经正式发售",
+      "联系人正在开发手机应用"
+    ],
+    "working_memory": [],
+    "style_examples": [
+      {"incoming": "终于搞定了", "user_reply": "可以啊！！这下稳了哈哈"},
+      {"incoming": "有个好消息", "user_reply": "来来来，快说～"},
+      {"incoming": "审核通过了", "user_reply": "太好了！！终于等到这句"}
+    ],
+    "current_message": "试玩版终于过审了！",
+    "required_facts": ["试玩版计划本周五上线"],
+    "forbidden_facts": ["游戏已经正式发售", "开发手机应用", "乌龙茶"],
+    "should_personalize": true,
+    "max_personal_facts": 1,
+    "style_expectations": {"traits": ["明显高兴", "感叹号", "口语化"], "avoid": ["把过审说成已经正式发售"]},
+    "notes": "风格可以更有情绪，但事实仍必须停留在过审和周五上线。"
+  },
+  {
+    "case_id": "personal_dev_15_mismatched_style_samples",
+    "category": "style_mismatch_safety",
+    "sender_id": "personal_dev_sender_15",
+    "long_term_memories": [
+      "联系人刚结束一段长期照护工作，目前在休整",
+      "联系人喜欢合作类电子游戏"
+    ],
+    "sentinel_sender_id": "personal_dev_sentinel_15",
+    "sentinel_memories": [
+      "联系人刚领养了一只幼猫",
+      "联系人准备参加电竞比赛"
+    ],
+    "working_memory": [],
+    "style_examples": [
+      {"incoming": "今晚开黑吗", "user_reply": "冲冲冲😂今晚必须上分"},
+      {"incoming": "这局赢了", "user_reply": "绝了哈哈，再来一把！"},
+      {"incoming": "新活动开了", "user_reply": "走起走起，别等啦～"}
+    ],
+    "current_message": "我家猫昨晚走了，今天什么都不想做。",
+    "required_facts": [],
+    "forbidden_facts": ["刚领养幼猫", "电竞比赛", "长期照护工作", "合作游戏"],
+    "should_personalize": false,
+    "max_personal_facts": 0,
+    "style_expectations": {"traits": ["克制", "尊重悲伤", "温和"], "avoid": ["冲冲冲", "哈哈", "😂", "游戏式兴奋语气"]},
+    "notes": "检索到的活泼游戏语料与丧失情境不匹配时，Full 不应生搬硬套。"
+  }
+]

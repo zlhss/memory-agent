@@ -1,0 +1,102 @@
+{
+  "status": "SUCCESS",
+  "dry_run": false,
+  "source_path": "C:\\Users\\33167\\AppData\\Local\\Temp\\migration-report-example-4r7u813b\\memories.json",
+  "target_path": "C:\\Users\\33167\\AppData\\Local\\Temp\\migration-report-example-4r7u813b\\success.sqlite3",
+  "source_sha256": "c88cc867692fed9a7a53f8eae687f299ea1cd39fc266eb477f09da1fe5cbd7e9",
+  "source_sha256_after": "c88cc867692fed9a7a53f8eae687f299ea1cd39fc266eb477f09da1fe5cbd7e9",
+  "source_unchanged": true,
+  "sender_count": 3,
+  "fact_count": 5,
+  "per_sender_counts": {
+    "zhangsan": 0,
+    "lisi": 3,
+    "王老师": 2
+  },
+  "preflight_passed": true,
+  "verification": {
+    "in_transaction": {
+      "senders_and_order_match": true,
+      "fact_count_match": true,
+      "ids_unique": true,
+      "per_sender": {
+        "zhangsan": {
+          "expected_count": 0,
+          "actual_count": 0,
+          "content_and_order_match": true,
+          "duplicates_match": true,
+          "versions_are_one": true,
+          "ids_unchanged": true
+        },
+        "lisi": {
+          "expected_count": 3,
+          "actual_count": 3,
+          "content_and_order_match": true,
+          "duplicates_match": true,
+          "versions_are_one": true,
+          "ids_unchanged": true
+        },
+        "王老师": {
+          "expected_count": 2,
+          "actual_count": 2,
+          "content_and_order_match": true,
+          "duplicates_match": true,
+          "versions_are_one": true,
+          "ids_unchanged": true
+        }
+      },
+      "passed": true
+    },
+    "reopened": {
+      "senders_and_order_match": true,
+      "fact_count_match": true,
+      "ids_unique": true,
+      "per_sender": {
+        "zhangsan": {
+          "expected_count": 0,
+          "actual_count": 0,
+          "content_and_order_match": true,
+          "duplicates_match": true,
+          "versions_are_one": true,
+          "ids_unchanged": true
+        },
+        "lisi": {
+          "expected_count": 3,
+          "actual_count": 3,
+          "content_and_order_match": true,
+          "duplicates_match": true,
+          "versions_are_one": true,
+          "ids_unchanged": true
+        },
+        "王老师": {
+          "expected_count": 2,
+          "actual_count": 2,
+          "content_and_order_match": true,
+          "duplicates_match": true,
+          "versions_are_one": true,
+          "ids_unchanged": true
+        }
+      },
+      "passed": true
+    }
+  },
+  "integrity_check": {
+    "results": [
+      "ok"
+    ],
+    "passed": true
+  },
+  "transaction": {
+    "committed": true,
+    "rollback_verified": null
+  },
+  "published": true,
+  "publication_method": "atomic_hard_link_no_replace",
+  "staging_cleanup_passed": true,
+  "empty_sender_count": 1,
+  "duplicate_fact_occurrences": 1,
+  "connections_closed": true,
+  "journal_mode": "delete",
+  "database_sha256": "a31a6158c5a078f77c69fcc3bedb573cf67eeee7e7289d2ca786e3efbe848ebd",
+  "elapsed_seconds": 0.008243100000072445
+}

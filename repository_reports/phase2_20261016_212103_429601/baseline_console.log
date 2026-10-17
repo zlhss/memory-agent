@@ -1,0 +1,11 @@
+Working Memory: [{'role': 'user', 'content': '最近摄影课作业有点多'}, {'role': 'assistant', 'content': '你最近确实花了不少时间在摄影上。'}]
+Contextual Query: 联系人准备暂停学习摄影
+Relevant Memories: ['联系人正在学习摄影']
+Raw Actions: [{'action': 'DELETE', 'target_index': 0, 'memory': None}]
+Missing Coverage Actions: []
+Merged Actions: [{'action': 'DELETE', 'target_index': 0, 'memory': None}]
+Selected Target: 联系人正在学习摄影
+Consistency Candidates: ['联系人住在厦门']
+Consistency Result: {'actions': []}
+Consistency Action Results: []
+OLLAMA_TIMING_SUMMARY: {"outcome": "success", "calls": [], "total_llm_calls": 0, "stage_timings": [], "total_llm_elapsed_seconds": 0, "total_request_elapsed_seconds": 0.094}

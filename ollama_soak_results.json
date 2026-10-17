@@ -1,0 +1,272 @@
+{
+  "model": "qwen3-vl:8b",
+  "http_timeout_seconds": 300,
+  "hard_stop_seconds": 60,
+  "cycles_requested": 10,
+  "stage_order": [
+    "Relevance Gate",
+    "Planner",
+    "Memory Manager"
+  ],
+  "prompt_hashes": {
+    "Relevance Gate": "d02a72fdb2d04ee93b63d33efc9fd7d9fedf0e9479fcd3100dbb2e24c4e582a6",
+    "Planner": "6ec2929150dbba7f4018703876ab46718ae88cb49582bb06e1f21323f6302e63",
+    "Memory Manager": "c89487fe5133e726016439dccd8fd6b7888d225e35cf67611c9e9ff6ed910567"
+  },
+  "started_at": "2026-09-24T16:16:53.420551+08:00",
+  "initial_ollama_ps": "NAME    ID    SIZE    PROCESSOR    CONTEXT    UNTIL",
+  "initial_state": {
+    "timestamp": "2026-09-24T16:16:54.077792+08:00",
+    "system_available_ram_bytes": 20651864064,
+    "ollama_process_count": 2,
+    "ollama_process_ram_bytes": 52559872,
+    "ollama_processes": [
+      {
+        "pid": 34980,
+        "name": "ollama.exe",
+        "rss_bytes": 27004928
+      },
+      {
+        "pid": 35604,
+        "name": "ollama app.exe",
+        "rss_bytes": 25554944
+      }
+    ],
+    "gpu": [
+      {
+        "index": 0,
+        "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "utilization_percent": 25,
+        "vram_used_mib": 1134,
+        "vram_total_mib": 8188,
+        "temperature_c": 51
+      }
+    ]
+  },
+  "results": [
+    {
+      "elapsed_seconds": 6.972,
+      "status": "success",
+      "http_status": 200,
+      "thinking_chars": 25,
+      "response_chars": 0,
+      "load_duration": 4551548800,
+      "prompt_eval_count": 289,
+      "prompt_eval_duration": 177423000,
+      "eval_count": 8,
+      "eval_duration": 191466000,
+      "total_duration": 4925583900,
+      "json_valid": true,
+      "error": null,
+      "sequence": 1,
+      "cycle": 1,
+      "stage": "Relevance Gate",
+      "before": {
+        "timestamp": "2026-09-24T16:16:54.649691+08:00",
+        "system_available_ram_bytes": 20657897472,
+        "ollama_process_count": 2,
+        "ollama_process_ram_bytes": 52559872,
+        "ollama_processes": [
+          {
+            "pid": 34980,
+            "name": "ollama.exe",
+            "rss_bytes": 27004928
+          },
+          {
+            "pid": 35604,
+            "name": "ollama app.exe",
+            "rss_bytes": 25554944
+          }
+        ],
+        "gpu": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "utilization_percent": 23,
+            "vram_used_mib": 1131,
+            "vram_total_mib": 8188,
+            "temperature_c": 51
+          }
+        ]
+      },
+      "after": {
+        "timestamp": "2026-09-24T16:17:02.598867+08:00",
+        "system_available_ram_bytes": 19239206912,
+        "ollama_process_count": 3,
+        "ollama_process_ram_bytes": 1218772992,
+        "ollama_processes": [
+          {
+            "pid": 11632,
+            "name": "llama-server.exe",
+            "rss_bytes": 1163104256
+          },
+          {
+            "pid": 34980,
+            "name": "ollama.exe",
+            "rss_bytes": 30113792
+          },
+          {
+            "pid": 35604,
+            "name": "ollama app.exe",
+            "rss_bytes": 25554944
+          }
+        ],
+        "gpu": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "utilization_percent": 5,
+            "vram_used_mib": 7681,
+            "vram_total_mib": 8188,
+            "temperature_c": 55
+          }
+        ]
+      }
+    },
+    {
+      "elapsed_seconds": 60.023,
+      "status": "hard_stop_over_60s",
+      "http_status": null,
+      "thinking_chars": 0,
+      "response_chars": 0,
+      "load_duration": null,
+      "prompt_eval_count": null,
+      "prompt_eval_duration": null,
+      "eval_count": null,
+      "eval_duration": null,
+      "total_duration": null,
+      "json_valid": false,
+      "error": "Request exceeded 60-second soak hard stop",
+      "sequence": 2,
+      "cycle": 1,
+      "stage": "Planner",
+      "before": {
+        "timestamp": "2026-09-24T16:17:03.232608+08:00",
+        "system_available_ram_bytes": 19238490112,
+        "ollama_process_count": 3,
+        "ollama_process_ram_bytes": 1218772992,
+        "ollama_processes": [
+          {
+            "pid": 11632,
+            "name": "llama-server.exe",
+            "rss_bytes": 1163104256
+          },
+          {
+            "pid": 34980,
+            "name": "ollama.exe",
+            "rss_bytes": 30113792
+          },
+          {
+            "pid": 35604,
+            "name": "ollama app.exe",
+            "rss_bytes": 25554944
+          }
+        ],
+        "gpu": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "utilization_percent": 5,
+            "vram_used_mib": 7683,
+            "vram_total_mib": 8188,
+            "temperature_c": 55
+          }
+        ]
+      },
+      "after": {
+        "timestamp": "2026-09-24T16:18:03.879050+08:00",
+        "system_available_ram_bytes": 19195318272,
+        "ollama_process_count": 3,
+        "ollama_process_ram_bytes": 1261871104,
+        "ollama_processes": [
+          {
+            "pid": 11632,
+            "name": "llama-server.exe",
+            "rss_bytes": 1206095872
+          },
+          {
+            "pid": 34980,
+            "name": "ollama.exe",
+            "rss_bytes": 30220288
+          },
+          {
+            "pid": 35604,
+            "name": "ollama app.exe",
+            "rss_bytes": 25554944
+          }
+        ],
+        "gpu": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "utilization_percent": 100,
+            "vram_used_mib": 7714,
+            "vram_total_mib": 8188,
+            "temperature_c": 60
+          }
+        ]
+      }
+    }
+  ],
+  "stopped_early": true,
+  "stop_reason": "Request exceeded 60-second soak hard stop",
+  "finished_at": "2026-09-24T16:18:03.880070+08:00",
+  "final_ollama_ps": "NAME           ID              SIZE      PROCESSOR          CONTEXT    UNTIL              \nqwen3-vl:8b    901cae732162    6.2 GB    11%/89% CPU/GPU    4096       4 minutes from now",
+  "final_state": {
+    "timestamp": "2026-09-24T16:18:04.559075+08:00",
+    "system_available_ram_bytes": 19195076608,
+    "ollama_process_count": 3,
+    "ollama_process_ram_bytes": 1261875200,
+    "ollama_processes": [
+      {
+        "pid": 11632,
+        "name": "llama-server.exe",
+        "rss_bytes": 1206099968
+      },
+      {
+        "pid": 34980,
+        "name": "ollama.exe",
+        "rss_bytes": 30220288
+      },
+      {
+        "pid": 35604,
+        "name": "ollama app.exe",
+        "rss_bytes": 25554944
+      }
+    ],
+    "gpu": [
+      {
+        "index": 0,
+        "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "utilization_percent": 100,
+        "vram_used_mib": 7714,
+        "vram_total_mib": 8188,
+        "temperature_c": 60
+      }
+    ]
+  },
+  "summary": {
+    "completed_calls": 2,
+    "average_latency_seconds": 33.498,
+    "median_latency_seconds": 33.498,
+    "p95_latency_seconds": 60.023,
+    "max_latency_seconds": 60.023,
+    "first_10_average_latency_seconds": 33.498,
+    "last_10_average_latency_seconds": 33.498,
+    "over_10_seconds_sequences": [
+      2
+    ],
+    "hard_stop_count": 1,
+    "timeout_count": 0,
+    "error_count": 0,
+    "json_valid_count": 1,
+    "llama_server_initial_pids": [],
+    "llama_server_observed_pids": [
+      11632
+    ],
+    "load_duration_reload_sequences": [
+      1
+    ],
+    "model_reload_detected": true
+  }
+}

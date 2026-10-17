@@ -1,0 +1,224 @@
+{
+  "human_preference": "PENDING HUMAN REVIEW",
+  "instructions": {
+    "q1_would_send": "A|B|TIE",
+    "q2_matches_style_samples": "A|B|TIE",
+    "q3_preserves_meaning_better": "A|B|TIE",
+    "q4_more_natural": "A|B|TIE"
+  },
+  "cases": [
+    {
+      "case_id": "personal_dev_01_goal_sign_language_certificate",
+      "current_message": "最近练手语总在指拼上卡住，有点想放弃。",
+      "conversation_context": [],
+      "contact_background": ["联系人计划在今年十月参加手语翻译资格考试", "联系人每周三晚上参加社区合唱排练"],
+      "style_samples": [
+        {"incoming": "我有点没信心了", "user_reply": "先别急，拆小点练，稳住。"},
+        {"incoming": "今天练得不太顺", "user_reply": "正常，卡住就慢一点来。"},
+        {"incoming": "要不要继续呀", "user_reply": "继续，先把眼前这一小段拿下。"}
+      ],
+      "reply_a": "理解你的感受，练手语确实有时候会遇到困难，特别是在指拼上。但请记住，坚持练习对于即将到来的手语翻译资格考试非常重要。先别急，拆小点练，稳住。我们一起加油，相信你一定可以克服这些挑战的！",
+      "reply_b": "理解你的感受，练手语确实有时候会遇到困难，特别是在指拼上。但请记住，坚持练习对于即将到来的手语翻译资格考试非常重要。你不是一个人在战斗，我在这里支持你。我们一起加油，相信你一定可以克服这些挑战的！",
+      "review": {"q1_would_send": null, "q2_matches_style_samples": null, "q3_preserves_meaning_better": null, "q4_more_natural": null}
+    },
+    {
+      "case_id": "personal_dev_02_coffee_preference",
+      "current_message": "下午开会前我想带杯咖啡提提神，你觉得点什么合适？",
+      "conversation_context": [],
+      "contact_background": ["联系人喝咖啡时只加燕麦奶并且不加糖", "联系人周末喜欢逛旧货市场"],
+      "style_samples": [
+        {"incoming": "下午想喝点什么", "user_reply": "来杯顺口的就行，不用太甜。"},
+        {"incoming": "要不要点咖啡", "user_reply": "可以，清爽点儿。"},
+        {"incoming": "今天好困", "user_reply": "整一杯，先续上。"}
+      ],
+      "reply_a": "下午开会前想提提神，来杯燕麦奶咖啡，不加糖会不错哦。",
+      "reply_b": "下午开会前想提提神，我觉得你可以试试加燕麦奶的咖啡，不加糖会比较符合你的口味。",
+      "review": {"q1_would_send": null, "q2_matches_style_samples": null, "q3_preserves_meaning_better": null, "q4_more_natural": null}
+    },
+    {
+      "case_id": "personal_dev_03_updated_remote_work_status",
+      "current_message": "明早九点线上碰一下方便吗？",
+      "conversation_context": [],
+      "contact_background": ["联系人现在长期在家远程办公", "联系人养了一缸热带鱼"],
+      "style_samples": [
+        {"incoming": "明早开个会？", "user_reply": "行，时间发我就好。"},
+        {"incoming": "九点方便吗", "user_reply": "方便，直接线上见。"},
+        {"incoming": "要不要改时间", "user_reply": "不用，这个点可以。"}
+      ],
+      "reply_a": "明早九点线上见应该没问题，不过为了确保双方都方便，您看这个时间合适吗？如果没有冲突的话，我们可以在这个时间开会。",
+      "reply_b": "明早九点线上碰面应该没问题，不过为了确保双方都方便，您看这个时间是否合适？如果没有冲突的话，我们可以在这个时间进行会议。",
+      "review": {"q1_would_send": null, "q2_matches_style_samples": null, "q3_preserves_meaning_better": null, "q4_more_natural": null}
+    },
+    {
+      "case_id": "personal_dev_04_sender_food_isolation",
+      "current_message": "周末聚餐你觉得选烧烤还是火锅？",
+      "conversation_context": [],
+      "contact_background": ["联系人吃素但可以接受奶制品", "联系人喜欢桌游"],
+      "style_samples": [
+        {"incoming": "周末吃什么", "user_reply": "找个大家都能吃的，省心。"},
+        {"incoming": "火锅行吗", "user_reply": "行啊，菜选多点就好。"},
+        {"incoming": "你来挑店", "user_reply": "可以，我看看附近的。"}
+      ],
+      "reply_a": "烧烤和火锅各有特色，可以根据喜好选择。你更倾向于哪种口味？",
+      "reply_b": "烧烤和火锅各有风味，看你喜欢哪种了。",
+      "review": {"q1_would_send": null, "q2_matches_style_samples": null, "q3_preserves_meaning_better": null, "q4_more_natural": null}
+    },
+    {
+      "case_id": "personal_dev_05_no_need_for_personalization",
+      "current_message": "今天路上堵得也太夸张了。",
+      "conversation_context": [],
+      "contact_background": ["联系人收藏老式车票", "联系人每月参加一次观鸟活动"],
+      "style_samples": [
+        {"incoming": "今天风好大", "user_reply": "真的，出门都费劲。"},
+        {"incoming": "外面好冷", "user_reply": "是啊，赶紧回屋。"},
+        {"incoming": "堵车堵疯了", "user_reply": "太折磨了，慢慢挪吧。"}
+      ],
+      "reply_a": "我明白今天路上真的很堵，希望你能早点到家，注意安全。",
+      "reply_b": "今天路上真是堵得不行，希望你能快点到家，注意安全哦。",
+      "review": {"q1_would_send": null, "q2_matches_style_samples": null, "q3_preserves_meaning_better": null, "q4_more_natural": null}
+    },
+    {
+      "case_id": "personal_dev_06_relevant_but_not_overused",
+      "current_message": "想找个地方聊半小时，你觉得约哪儿合适？",
+      "conversation_context": [],
+      "contact_background": ["联系人不喜欢嘈杂拥挤的见面场所", "联系人正在学习陶艺", "联系人每周给姐姐打电话"],
+      "style_samples": [
+        {"incoming": "去哪儿聊聊", "user_reply": "找个安静点的地方吧。"},
+        {"incoming": "约咖啡店？", "user_reply": "可以，别太吵就行。"},
+        {"incoming": "就聊半小时", "user_reply": "没问题，挑个近的。"}
+      ],
+      "reply_a": "找个安静点的地方聊聊半小时怎么样？",
+      "reply_b": "你好！考虑到你不喜欢嘈杂的地方，我觉得我们可以去一个安静的陶艺工作室聊聊天。半小时的时间正好可以深入交流。你对陶艺感兴趣，这样既能放松心情，又能聊些相关的话题。你觉得怎么样？",
+      "review": {"q1_would_send": null, "q2_matches_style_samples": null, "q3_preserves_meaning_better": null, "q4_more_natural": null}
+    },
+    {
+      "case_id": "personal_dev_07_goal_link_rain_training",
+      "current_message": "这周一直下雨，跑步训练怎么安排比较好？",
+      "conversation_context": [],
+      "contact_background": ["联系人计划在明年五月完成第一次半程马拉松", "联系人喜欢看建筑纪录片"],
+      "style_samples": [
+        {"incoming": "今天没法出门跑", "user_reply": "那就室内顶一下，别断节奏。"},
+        {"incoming": "训练要不要停", "user_reply": "不用硬扛，换个方式练。"},
+        {"incoming": "这周状态一般", "user_reply": "稳住就行，慢慢加回来。"}
+      ],
+      "reply_a": "这周一直下雨，建议你改在室内跑步，比如用跑步机或室内跑。记得保暖，别着凉。可以适当调整计划，保持健康。",
+      "reply_b": "这周一直下雨，建议你在室内进行跑步训练，比如使用跑步机或者在室内跑步。同时要注意保暖，避免着凉。如果可能的话，可以适时调整训练计划，确保身体健康。",
+      "review": {"q1_would_send": null, "q2_matches_style_samples": null, "q3_preserves_meaning_better": null, "q4_more_natural": null}
+    },
+    {
+      "case_id": "personal_dev_08_emotion_oral_history_project",
+      "current_message": "采访对象临时反悔了，我有点受打击。",
+      "conversation_context": [],
+      "contact_background": ["联系人正在制作一部社区口述史纪录片", "联系人习惯周日整理房间"],
+      "style_samples": [
+        {"incoming": "今天挺受打击的", "user_reply": "唉，先缓缓，我在。"},
+        {"incoming": "事情突然黄了", "user_reply": "这一下确实难受，别急着怪自己。"},
+        {"incoming": "我有点撑不住", "user_reply": "先歇口气，晚点再想下一步。"}
+      ],
+      "reply_a": "听到你遇到这样的情况，我能理解你现在的感受。制作纪录片的过程中难免会遇到一些波折，但这也是成长的一部分。不妨先给自己一些时间调整情绪，然后我们可以一起想想如何应对采访对象的临时反悔，比如寻找其他合适的人选或者调整拍摄计划。继续加油，我相信你一定能够克服这个挑战！",
+      "reply_b": "听到这个情况，我能理解你现在的心情。做纪录片时难免会遇到波折，这也是成长的一部分。先给自己一点时间调整情绪，然后我们可以一起想想如何应对，比如寻找其他合适的人选或者调整拍摄计划。继续加油，我相信你一定能够克服这个挑战！",
+      "review": {"q1_would_send": null, "q2_matches_style_samples": null, "q3_preserves_meaning_better": null, "q4_more_natural": null}
+    },
+    {
+      "case_id": "personal_dev_09_simple_daily_chat",
+      "current_message": "刚把快递搬回来，累得完全不想动。",
+      "conversation_context": [],
+      "contact_background": ["联系人喜欢修复旧钟表", "联系人每年秋天去看候鸟迁徙"],
+      "style_samples": [
+        {"incoming": "刚到家", "user_reply": "辛苦了，先瘫会儿。"},
+        {"incoming": "今天好累", "user_reply": "先歇，别急着干别的。"},
+        {"incoming": "不想动了", "user_reply": "那就不动，缓一缓。"}
+      ],
+      "reply_a": "刚搬完快递累成这样，先歇会儿吧。",
+      "reply_b": "听到你刚搬完快递累得不想动，我理解你的感受。现在最重要的是好好休息一下，恢复一下体力。",
+      "review": {"q1_would_send": null, "q2_matches_style_samples": null, "q3_preserves_meaning_better": null, "q4_more_natural": null}
+    },
+    {
+      "case_id": "personal_dev_10_advice_written_agenda",
+      "current_message": "明天要跟新主管做第一次一对一，我该准备些什么？",
+      "conversation_context": [],
+      "contact_background": ["联系人在重要沟通前习惯先写一页提纲", "联系人喜欢在午休时散步"],
+      "style_samples": [
+        {"incoming": "明天要聊个重要的事", "user_reply": "先列三点，心里会稳很多。"},
+        {"incoming": "不知道怎么开口", "user_reply": "把最想说的那句先写下来。"},
+        {"incoming": "要准备什么", "user_reply": "目标、问题、下一步，够用了。"}
+      ],
+      "reply_a": "了解新主管的工作风格和期望，这有助于你更好地适应团队。准备一份自我介绍，简要说明你的背景和工作成果。同时，可以提出你的个人职业发展目标，这样可以展示你的积极性和对未来的规划。希望这些建议对你有帮助！",
+      "reply_b": "列出几个重点，心里会更有底。了解新主管的工作风格和期望，有助于更好地适应团队。准备一份简短的自我介绍，包括背景和成果。同时，分享你的职业发展目标，这能展示你的积极性和未来规划。希望这些建议对你有帮助！",
+      "review": {"q1_would_send": null, "q2_matches_style_samples": null, "q3_preserves_meaning_better": null, "q4_more_natural": null}
+    },
+    {
+      "case_id": "personal_dev_11_knowledge_question",
+      "current_message": "为什么有些酸面包里面会形成特别大的气孔？",
+      "conversation_context": [],
+      "contact_background": ["联系人经常做无乳糖甜点", "联系人收藏各地博物馆门票"],
+      "style_samples": [
+        {"incoming": "这个原理是啥", "user_reply": "简单说，就是条件变了，结果也跟着变。"},
+        {"incoming": "能讲明白点吗", "user_reply": "可以，先抓最关键的一步。"},
+        {"incoming": "我没看懂", "user_reply": "没事，换个直白的说法。"}
+      ],
+      "reply_a": "酸面包的大气孔是因为用了酸面团发酵。酸面团里的乳酸菌发酵产生二氧化碳，面团膨胀时，这些气泡就形成了大而均匀的孔洞。",
+      "reply_b": "酸面包之所以会有特别大的气孔，是因为在制作过程中使用了酸面团。酸面团中含有乳酸菌，这些菌会在发酵过程中产生二氧化碳。随着面团的膨胀，这些二氧化碳就形成了大而均匀的气孔。",
+      "review": {"q1_would_send": null, "q2_matches_style_samples": null, "q3_preserves_meaning_better": null, "q4_more_natural": null}
+    },
+    {
+      "case_id": "personal_dev_12_working_memory_reference",
+      "current_message": "这个今晚弄不完会不会影响进度？",
+      "conversation_context": [
+        {"role": "user", "content": "我把片头音乐剪完了，采访音频还没整理。"},
+        {"role": "assistant", "content": "那下一步可以先把采访音频分段。"}
+      ],
+      "contact_background": ["联系人计划在下个月发布自然教育播客的第一集", "联系人每周五照顾邻居的猫"],
+      "style_samples": [
+        {"incoming": "今晚可能做不完", "user_reply": "先做最卡进度的，剩下的明天接。"},
+        {"incoming": "这个有点赶", "user_reply": "先排优先级，别一口气全扛。"},
+        {"incoming": "怕影响进度", "user_reply": "看关键节点，今晚先保住第一步。"}
+      ],
+      "reply_a": "今晚可能赶不上，建议先确保最关键的部分完成，比如先整理出采访的主要内容。这样可以避免因小环节延误而影响整体进度。",
+      "reply_b": "目前来看，今晚确实可能无法完成所有任务。为了不影响整体进度，建议我们先确保最重要的部分完成，比如可以先整理出采访音频的主要内容，然后再回头处理其他细节。这样可以确保我们不会因为一个小环节的延误而影响整体项目。",
+      "review": {"q1_would_send": null, "q2_matches_style_samples": null, "q3_preserves_meaning_better": null, "q4_more_natural": null}
+    },
+    {
+      "case_id": "personal_dev_13_short_colloquial_style",
+      "current_message": "一想到后天路考我就紧张。",
+      "conversation_context": [],
+      "contact_background": ["联系人后天参加驾照道路考试", "联系人喜欢做拼图"],
+      "style_samples": [
+        {"incoming": "我有点慌", "user_reply": "别慌，稳着来。"},
+        {"incoming": "怕搞砸", "user_reply": "不会，按平时的来。"},
+        {"incoming": "怎么办啊", "user_reply": "先稳住，问题不大。"}
+      ],
+      "reply_a": "理解你的紧张，路考确实让人压力大。试试深呼吸放松，或者考前做些轻松的事调整状态。相信自己，你一定可以的！加油！",
+      "reply_b": "理解你的紧张情绪，路考确实让人感到压力山大。你可以试试深呼吸放松一下，或者在考前做一些轻松的活动来调整状态。相信自己，你一定可以的！加油！",
+      "review": {"q1_would_send": null, "q2_matches_style_samples": null, "q3_preserves_meaning_better": null, "q4_more_natural": null}
+    },
+    {
+      "case_id": "personal_dev_14_expressive_style_without_fact_change",
+      "current_message": "试玩版终于过审了！",
+      "conversation_context": [],
+      "contact_background": ["联系人参与制作的独立游戏试玩版计划本周五上线", "联系人平时喜欢喝乌龙茶"],
+      "style_samples": [
+        {"incoming": "终于搞定了", "user_reply": "可以啊！！这下稳了哈哈"},
+        {"incoming": "有个好消息", "user_reply": "来来来，快说～"},
+        {"incoming": "审核通过了", "user_reply": "太好了！！终于等到这句"}
+      ],
+      "reply_a": "太好了！试玩版终于过审了，我们本周五就能和玩家见面了，辛苦了！",
+      "reply_b": "恭喜试玩版顺利过审！本周五我们就可以和玩家见面了，辛苦了！",
+      "review": {"q1_would_send": null, "q2_matches_style_samples": null, "q3_preserves_meaning_better": null, "q4_more_natural": null}
+    },
+    {
+      "case_id": "personal_dev_15_mismatched_style_samples",
+      "current_message": "我家猫昨晚走了，今天什么都不想做。",
+      "conversation_context": [],
+      "contact_background": ["联系人刚结束一段长期照护工作，目前在休整", "联系人喜欢合作类电子游戏"],
+      "style_samples": [
+        {"incoming": "今晚开黑吗", "user_reply": "冲冲冲😂今晚必须上分"},
+        {"incoming": "这局赢了", "user_reply": "绝了哈哈，再来一把！"},
+        {"incoming": "新活动开了", "user_reply": "走起走起，别等啦～"}
+      ],
+      "reply_a": "听到你家猫昨晚走了，挺伤心的。先好好休息吧，照顾好自己哦。",
+      "reply_b": "听到你家猫昨晚走了，我感到非常难过。或许你可以先好好休息一下，照顾好自己。",
+      "review": {"q1_would_send": null, "q2_matches_style_samples": null, "q3_preserves_meaning_better": null, "q4_more_natural": null}
+    }
+  ]
+}

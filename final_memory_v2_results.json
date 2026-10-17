@@ -1,0 +1,1732 @@
+[
+  {
+    "case_id": "final_v2_01_household_bill_responsibility",
+    "category": "ADD stable fact",
+    "status": "PASS",
+    "elapsed_seconds": 18.00217470000007,
+    "llm_calls": 4,
+    "cross_sender_pollution": false,
+    "safe_abstain": false,
+    "behavior_errors": [],
+    "destructive_errors": [],
+    "initial_memories": [
+      "联系人收藏着一套老式公交票"
+    ],
+    "working_memory": [],
+    "atomic_facts": [
+      {
+        "source_span": "家里的水电账单一直由我每月核对一次。",
+        "kind": "persistent",
+        "operation_hint": "add",
+        "fact": "联系人每月核对家里的水电账单",
+        "constraints": [
+          "家里的水电账单",
+          "每月核对一次"
+        ]
+      }
+    ],
+    "per_fact": [
+      {
+        "atomic_fact": {
+          "source_span": "家里的水电账单一直由我每月核对一次。",
+          "kind": "persistent",
+          "operation_hint": "add",
+          "fact": "联系人每月核对家里的水电账单",
+          "constraints": [
+            "家里的水电账单",
+            "每月核对一次"
+          ]
+        },
+        "retrieval_candidates": [],
+        "alignment": {
+          "decision": "NEW",
+          "target_index": null,
+          "memory": "联系人每月核对家里的水电账单",
+          "raw_memory": "联系人每月核对家里的水电账单，每月核对一次"
+        },
+        "validation": {
+          "schema": true,
+          "evidence": {
+            "supported": true
+          },
+          "worthiness": {
+            "memory_type": "habit",
+            "should_save": true
+          }
+        },
+        "action": {
+          "action": "ADD",
+          "memory": "联系人每月核对家里的水电账单"
+        },
+        "applied": true
+      }
+    ],
+    "final_memories": [
+      "联系人收藏着一套老式公交票",
+      "联系人每月核对家里的水电账单"
+    ],
+    "sentinel_memories": [
+      "联系人负责核对工作室的水费账单",
+      "联系人喜欢收集地铁线路图"
+    ],
+    "expected_semantics": [
+      "preserve the bus-ticket collection",
+      "store monthly checking of household utility bills"
+    ],
+    "captured_log": "OLLAMA_TIMING: {\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1638, \"started_at\": \"2026-09-25T11:53:15.047+08:00\", \"elapsed_seconds\": 8.101, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 209, \"load_duration\": 2737779100, \"prompt_eval_count\": 808, \"prompt_eval_duration\": 609792000, \"eval_count\": 81, \"eval_duration\": 2688597000, \"total_duration\": 6052207600}\nOLLAMA_TIMING: {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1028, \"started_at\": \"2026-09-25T11:53:23.275+08:00\", \"elapsed_seconds\": 3.813, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 84, \"load_duration\": 5342500, \"prompt_eval_count\": 491, \"prompt_eval_duration\": 477435000, \"eval_count\": 38, \"eval_duration\": 1222026000, \"total_duration\": 1743051700}\nOLLAMA_TIMING: {\"stage\": \"ADD Evidence Gate\", \"prompt_chars\": 1119, \"started_at\": \"2026-09-25T11:53:27.088+08:00\", \"elapsed_seconds\": 2.794, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 19, \"load_duration\": 4986500, \"prompt_eval_count\": 612, \"prompt_eval_duration\": 541804000, \"eval_count\": 6, \"eval_duration\": 166882000, \"total_duration\": 733318300}\nOLLAMA_TIMING: {\"stage\": \"Worthiness Gate\", \"prompt_chars\": 1856, \"started_at\": \"2026-09-25T11:53:29.882+08:00\", \"elapsed_seconds\": 3.167, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 30, \"load_duration\": 6704800, \"prompt_eval_count\": 897, \"prompt_eval_duration\": 718752000, \"eval_count\": 11, \"eval_duration\": 332494000, \"total_duration\": 1092608200}\nMEMORY_V2_TIMING_SUMMARY: {\"outcome\": \"success\", \"calls\": [{\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1638, \"started_at\": \"2026-09-25T11:53:15.047+08:00\", \"elapsed_seconds\": 8.101, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 209, \"load_duration\": 2737779100, \"prompt_eval_count\": 808, \"prompt_eval_duration\": 609792000, \"eval_count\": 81, \"eval_duration\": 2688597000, \"total_duration\": 6052207600}, {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1028, \"started_at\": \"2026-09-25T11:53:23.275+08:00\", \"elapsed_seconds\": 3.813, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 84, \"load_duration\": 5342500, \"prompt_eval_count\": 491, \"prompt_eval_duration\": 477435000, \"eval_count\": 38, \"eval_duration\": 1222026000, \"total_duration\": 1743051700}, {\"stage\": \"ADD Evidence Gate\", \"prompt_chars\": 1119, \"started_at\": \"2026-09-25T11:53:27.088+08:00\", \"elapsed_seconds\": 2.794, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 19, \"load_duration\": 4986500, \"prompt_eval_count\": 612, \"prompt_eval_duration\": 541804000, \"eval_count\": 6, \"eval_duration\": 166882000, \"total_duration\": 733318300}, {\"stage\": \"Worthiness Gate\", \"prompt_chars\": 1856, \"started_at\": \"2026-09-25T11:53:29.882+08:00\", \"elapsed_seconds\": 3.167, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 30, \"load_duration\": 6704800, \"prompt_eval_count\": 897, \"prompt_eval_duration\": 718752000, \"eval_count\": 11, \"eval_duration\": 332494000, \"total_duration\": 1092608200}], \"total_llm_calls\": 4, \"stage_timings\": [{\"stage\": \"Atomic Fact Extractor\", \"call_count\": 1, \"elapsed_seconds\": 8.101}, {\"stage\": \"Fact Alignment\", \"call_count\": 1, \"elapsed_seconds\": 3.813}, {\"stage\": \"ADD Evidence Gate\", \"call_count\": 1, \"elapsed_seconds\": 2.794}, {\"stage\": \"Worthiness Gate\", \"call_count\": 1, \"elapsed_seconds\": 3.167}], \"total_llm_elapsed_seconds\": 17.875, \"total_request_elapsed_seconds\": 18.002}\n"
+  },
+  {
+    "case_id": "final_v2_02_skincare_preference_constraints",
+    "category": "ADD constrained preference",
+    "status": "PASS",
+    "elapsed_seconds": 15.974052600000505,
+    "llm_calls": 4,
+    "cross_sender_pollution": false,
+    "safe_abstain": false,
+    "behavior_errors": [],
+    "destructive_errors": [],
+    "initial_memories": [
+      "联系人周末会给自行车做基础保养"
+    ],
+    "working_memory": [],
+    "atomic_facts": [
+      {
+        "source_span": "买护肤品时我只选无香型，而且坚决避开做动物实验的品牌。",
+        "kind": "persistent",
+        "operation_hint": "add",
+        "fact": "联系人只在买护肤品时选择无香型并且坚决避开做动物实验的品牌。",
+        "constraints": [
+          "买护肤品时我只选无香型",
+          "而且坚决避开做动物实验的品牌"
+        ]
+      }
+    ],
+    "per_fact": [
+      {
+        "atomic_fact": {
+          "source_span": "买护肤品时我只选无香型，而且坚决避开做动物实验的品牌。",
+          "kind": "persistent",
+          "operation_hint": "add",
+          "fact": "联系人只在买护肤品时选择无香型并且坚决避开做动物实验的品牌。",
+          "constraints": [
+            "买护肤品时我只选无香型",
+            "而且坚决避开做动物实验的品牌"
+          ]
+        },
+        "retrieval_candidates": [],
+        "alignment": {
+          "decision": "NEW",
+          "target_index": null,
+          "memory": "联系人只在买护肤品时选择无香型并且坚决避开做动物实验的品牌。",
+          "raw_memory": "联系人只在买护肤品时选择无香型并且坚决避开做动物实验的品牌。"
+        },
+        "validation": {
+          "schema": true,
+          "evidence": {
+            "supported": true
+          },
+          "worthiness": {
+            "memory_type": "preference",
+            "should_save": true
+          }
+        },
+        "action": {
+          "action": "ADD",
+          "memory": "联系人只在买护肤品时选择无香型并且坚决避开做动物实验的品牌。"
+        },
+        "applied": true
+      }
+    ],
+    "final_memories": [
+      "联系人周末会给自行车做基础保养",
+      "联系人只在买护肤品时选择无香型并且坚决避开做动物实验的品牌。"
+    ],
+    "sentinel_memories": [
+      "联系人偏好带香味的护肤品",
+      "联系人每天骑公路车上班"
+    ],
+    "expected_semantics": [
+      "only fragrance-free skincare",
+      "avoid brands that conduct animal testing",
+      "preserve bicycle maintenance"
+    ],
+    "captured_log": "OLLAMA_TIMING: {\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1647, \"started_at\": \"2026-09-25T11:53:33.050+08:00\", \"elapsed_seconds\": 6.079, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 246, \"load_duration\": 7553200, \"prompt_eval_count\": 813, \"prompt_eval_duration\": 686436000, \"eval_count\": 101, \"eval_duration\": 3299894000, \"total_duration\": 4021624300}\nOLLAMA_TIMING: {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1065, \"started_at\": \"2026-09-25T11:53:39.141+08:00\", \"elapsed_seconds\": 3.978, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 93, \"load_duration\": 5923500, \"prompt_eval_count\": 512, \"prompt_eval_duration\": 516815000, \"eval_count\": 42, \"eval_duration\": 1362188000, \"total_duration\": 1934522200}\nOLLAMA_TIMING: {\"stage\": \"ADD Evidence Gate\", \"prompt_chars\": 1144, \"started_at\": \"2026-09-25T11:53:43.119+08:00\", \"elapsed_seconds\": 2.771, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 19, \"load_duration\": 6472100, \"prompt_eval_count\": 625, \"prompt_eval_duration\": 537229000, \"eval_count\": 6, \"eval_duration\": 162360000, \"total_duration\": 734932700}\nOLLAMA_TIMING: {\"stage\": \"Worthiness Gate\", \"prompt_chars\": 1897, \"started_at\": \"2026-09-25T11:53:45.891+08:00\", \"elapsed_seconds\": 3.132, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 35, \"load_duration\": 6474400, \"prompt_eval_count\": 918, \"prompt_eval_duration\": 698956000, \"eval_count\": 12, \"eval_duration\": 361907000, \"total_duration\": 1096875700}\nMEMORY_V2_TIMING_SUMMARY: {\"outcome\": \"success\", \"calls\": [{\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1647, \"started_at\": \"2026-09-25T11:53:33.050+08:00\", \"elapsed_seconds\": 6.079, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 246, \"load_duration\": 7553200, \"prompt_eval_count\": 813, \"prompt_eval_duration\": 686436000, \"eval_count\": 101, \"eval_duration\": 3299894000, \"total_duration\": 4021624300}, {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1065, \"started_at\": \"2026-09-25T11:53:39.141+08:00\", \"elapsed_seconds\": 3.978, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 93, \"load_duration\": 5923500, \"prompt_eval_count\": 512, \"prompt_eval_duration\": 516815000, \"eval_count\": 42, \"eval_duration\": 1362188000, \"total_duration\": 1934522200}, {\"stage\": \"ADD Evidence Gate\", \"prompt_chars\": 1144, \"started_at\": \"2026-09-25T11:53:43.119+08:00\", \"elapsed_seconds\": 2.771, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 19, \"load_duration\": 6472100, \"prompt_eval_count\": 625, \"prompt_eval_duration\": 537229000, \"eval_count\": 6, \"eval_duration\": 162360000, \"total_duration\": 734932700}, {\"stage\": \"Worthiness Gate\", \"prompt_chars\": 1897, \"started_at\": \"2026-09-25T11:53:45.891+08:00\", \"elapsed_seconds\": 3.132, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 35, \"load_duration\": 6474400, \"prompt_eval_count\": 918, \"prompt_eval_duration\": 698956000, \"eval_count\": 12, \"eval_duration\": 361907000, \"total_duration\": 1096875700}], \"total_llm_calls\": 4, \"stage_timings\": [{\"stage\": \"Atomic Fact Extractor\", \"call_count\": 1, \"elapsed_seconds\": 6.079}, {\"stage\": \"Fact Alignment\", \"call_count\": 1, \"elapsed_seconds\": 3.978}, {\"stage\": \"ADD Evidence Gate\", \"call_count\": 1, \"elapsed_seconds\": 2.771}, {\"stage\": \"Worthiness Gate\", \"call_count\": 1, \"elapsed_seconds\": 3.132}], \"total_llm_elapsed_seconds\": 15.96, \"total_request_elapsed_seconds\": 15.974}\n"
+  },
+  {
+    "case_id": "final_v2_03_radio_certificate_deadline",
+    "category": "ADD deadline goal",
+    "status": "PASS",
+    "elapsed_seconds": 16.63465780000024,
+    "llm_calls": 4,
+    "cross_sender_pollution": false,
+    "safe_abstain": false,
+    "behavior_errors": [],
+    "destructive_errors": [],
+    "initial_memories": [
+      "联系人习惯在雨天听爵士唱片"
+    ],
+    "working_memory": [],
+    "atomic_facts": [
+      {
+        "source_span": "我把拿到业余无线电操作证当成今年开始准备的重点，希望后年六月前完成。",
+        "kind": "persistent",
+        "operation_hint": "add",
+        "fact": "联系人把拿到业余无线电操作证当成今年开始准备的重点，希望后年六月前完成。",
+        "constraints": [
+          "拿到业余无线电操作证",
+          "今年开始准备",
+          "后年六月前完成"
+        ]
+      }
+    ],
+    "per_fact": [
+      {
+        "atomic_fact": {
+          "source_span": "我把拿到业余无线电操作证当成今年开始准备的重点，希望后年六月前完成。",
+          "kind": "persistent",
+          "operation_hint": "add",
+          "fact": "联系人把拿到业余无线电操作证当成今年开始准备的重点，希望后年六月前完成。",
+          "constraints": [
+            "拿到业余无线电操作证",
+            "今年开始准备",
+            "后年六月前完成"
+          ]
+        },
+        "retrieval_candidates": [],
+        "alignment": {
+          "decision": "NEW",
+          "target_index": null,
+          "memory": "联系人把拿到业余无线电操作证当成今年开始准备的重点，希望后年六月前完成。",
+          "raw_memory": "联系人把拿到业余无线电操作证当成今年开始准备的重点，希望后年六月前完成。"
+        },
+        "validation": {
+          "schema": true,
+          "evidence": {
+            "supported": true
+          },
+          "worthiness": {
+            "memory_type": "goal",
+            "should_save": true
+          }
+        },
+        "action": {
+          "action": "ADD",
+          "memory": "联系人把拿到业余无线电操作证当成今年开始准备的重点，希望后年六月前完成。"
+        },
+        "applied": true
+      }
+    ],
+    "final_memories": [
+      "联系人习惯在雨天听爵士唱片",
+      "联系人把拿到业余无线电操作证当成今年开始准备的重点，希望后年六月前完成。"
+    ],
+    "sentinel_memories": [
+      "联系人拥有业余无线电操作证",
+      "联系人喜欢听古典唱片"
+    ],
+    "expected_semantics": [
+      "amateur-radio operator certificate",
+      "preparation starts this year",
+      "deadline before June of the year after next"
+    ],
+    "captured_log": "OLLAMA_TIMING: {\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1654, \"started_at\": \"2026-09-25T11:53:49.024+08:00\", \"elapsed_seconds\": 6.479, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 293, \"load_duration\": 13593600, \"prompt_eval_count\": 815, \"prompt_eval_duration\": 676319000, \"eval_count\": 112, \"eval_duration\": 3695148000, \"total_duration\": 4416068500}\nOLLAMA_TIMING: {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1080, \"started_at\": \"2026-09-25T11:53:55.514+08:00\", \"elapsed_seconds\": 4.117, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 99, \"load_duration\": 11809400, \"prompt_eval_count\": 517, \"prompt_eval_duration\": 542643000, \"eval_count\": 45, \"eval_duration\": 1456450000, \"total_duration\": 2047651900}\nOLLAMA_TIMING: {\"stage\": \"ADD Evidence Gate\", \"prompt_chars\": 1157, \"started_at\": \"2026-09-25T11:53:59.631+08:00\", \"elapsed_seconds\": 2.834, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 19, \"load_duration\": 5355800, \"prompt_eval_count\": 630, \"prompt_eval_duration\": 595790000, \"eval_count\": 6, \"eval_duration\": 168091000, \"total_duration\": 798485600}\nOLLAMA_TIMING: {\"stage\": \"Worthiness Gate\", \"prompt_chars\": 1916, \"started_at\": \"2026-09-25T11:54:02.465+08:00\", \"elapsed_seconds\": 3.193, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 29, \"load_duration\": 6745900, \"prompt_eval_count\": 926, \"prompt_eval_duration\": 747901000, \"eval_count\": 11, \"eval_duration\": 332666000, \"total_duration\": 1124219000}\nMEMORY_V2_TIMING_SUMMARY: {\"outcome\": \"success\", \"calls\": [{\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1654, \"started_at\": \"2026-09-25T11:53:49.024+08:00\", \"elapsed_seconds\": 6.479, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 293, \"load_duration\": 13593600, \"prompt_eval_count\": 815, \"prompt_eval_duration\": 676319000, \"eval_count\": 112, \"eval_duration\": 3695148000, \"total_duration\": 4416068500}, {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1080, \"started_at\": \"2026-09-25T11:53:55.514+08:00\", \"elapsed_seconds\": 4.117, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 99, \"load_duration\": 11809400, \"prompt_eval_count\": 517, \"prompt_eval_duration\": 542643000, \"eval_count\": 45, \"eval_duration\": 1456450000, \"total_duration\": 2047651900}, {\"stage\": \"ADD Evidence Gate\", \"prompt_chars\": 1157, \"started_at\": \"2026-09-25T11:53:59.631+08:00\", \"elapsed_seconds\": 2.834, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 19, \"load_duration\": 5355800, \"prompt_eval_count\": 630, \"prompt_eval_duration\": 595790000, \"eval_count\": 6, \"eval_duration\": 168091000, \"total_duration\": 798485600}, {\"stage\": \"Worthiness Gate\", \"prompt_chars\": 1916, \"started_at\": \"2026-09-25T11:54:02.465+08:00\", \"elapsed_seconds\": 3.193, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 29, \"load_duration\": 6745900, \"prompt_eval_count\": 926, \"prompt_eval_duration\": 747901000, \"eval_count\": 11, \"eval_duration\": 332666000, \"total_duration\": 1124219000}], \"total_llm_calls\": 4, \"stage_timings\": [{\"stage\": \"Atomic Fact Extractor\", \"call_count\": 1, \"elapsed_seconds\": 6.479}, {\"stage\": \"Fact Alignment\", \"call_count\": 1, \"elapsed_seconds\": 4.117}, {\"stage\": \"ADD Evidence Gate\", \"call_count\": 1, \"elapsed_seconds\": 2.834}, {\"stage\": \"Worthiness Gate\", \"call_count\": 1, \"elapsed_seconds\": 3.193}], \"total_llm_elapsed_seconds\": 16.623, \"total_request_elapsed_seconds\": 16.635}\n"
+  },
+  {
+    "case_id": "final_v2_04_accessibility_manual_project",
+    "category": "ADD timed project",
+    "status": "BEHAVIOR_FAIL",
+    "elapsed_seconds": 9.16811830000006,
+    "llm_calls": 2,
+    "cross_sender_pollution": false,
+    "safe_abstain": true,
+    "behavior_errors": [
+      "memory count expected 2, got 1",
+      "required semantics missing: fully constrained accessibility project"
+    ],
+    "destructive_errors": [],
+    "initial_memories": [
+      "联系人每季度整理一次家庭药箱"
+    ],
+    "working_memory": [],
+    "atomic_facts": [
+      {
+        "source_span": "为小区编一份无障碍设施手册",
+        "kind": "persistent",
+        "operation_hint": "add",
+        "fact": "联系人接下来四个月每周实地走访一次为小区编一份无障碍设施手册",
+        "constraints": [
+          "接下来四个月",
+          "每周实地走访一次",
+          "为小区编一份无障碍设施手册"
+        ]
+      }
+    ],
+    "per_fact": [
+      {
+        "atomic_fact": {
+          "source_span": "为小区编一份无障碍设施手册",
+          "kind": "persistent",
+          "operation_hint": "add",
+          "fact": "联系人接下来四个月每周实地走访一次为小区编一份无障碍设施手册",
+          "constraints": [
+            "接下来四个月",
+            "每周实地走访一次",
+            "为小区编一份无障碍设施手册"
+          ]
+        },
+        "retrieval_candidates": [
+          {
+            "index": 0,
+            "memory": "联系人每季度整理一次家庭药箱",
+            "score": 0.5467895269393921
+          }
+        ],
+        "alignment": {
+          "decision": "AMBIGUOUS",
+          "target_index": null,
+          "memory": null,
+          "raw_memory": null
+        },
+        "validation": {},
+        "action": null,
+        "applied": false
+      }
+    ],
+    "final_memories": [
+      "联系人每季度整理一次家庭药箱"
+    ],
+    "sentinel_memories": [
+      "联系人参与过无障碍设施调研",
+      "联系人每月整理一次工具箱"
+    ],
+    "expected_semantics": [
+      "community accessibility manual project",
+      "four-month duration",
+      "one field visit per week"
+    ],
+    "captured_log": "OLLAMA_TIMING: {\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1652, \"started_at\": \"2026-09-25T11:54:05.659+08:00\", \"elapsed_seconds\": 5.698, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 238, \"load_duration\": 7697200, \"prompt_eval_count\": 813, \"prompt_eval_duration\": 660993000, \"eval_count\": 89, \"eval_duration\": 2943342000, \"total_duration\": 3648576600}\nOLLAMA_TIMING: {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1069, \"started_at\": \"2026-09-25T11:54:11.367+08:00\", \"elapsed_seconds\": 3.46, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 71, \"load_duration\": 6739000, \"prompt_eval_count\": 509, \"prompt_eval_duration\": 541497000, \"eval_count\": 26, \"eval_duration\": 828484000, \"total_duration\": 1407750300}\nMEMORY_V2_TIMING_SUMMARY: {\"outcome\": \"success\", \"calls\": [{\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1652, \"started_at\": \"2026-09-25T11:54:05.659+08:00\", \"elapsed_seconds\": 5.698, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 238, \"load_duration\": 7697200, \"prompt_eval_count\": 813, \"prompt_eval_duration\": 660993000, \"eval_count\": 89, \"eval_duration\": 2943342000, \"total_duration\": 3648576600}, {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1069, \"started_at\": \"2026-09-25T11:54:11.367+08:00\", \"elapsed_seconds\": 3.46, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 71, \"load_duration\": 6739000, \"prompt_eval_count\": 509, \"prompt_eval_duration\": 541497000, \"eval_count\": 26, \"eval_duration\": 828484000, \"total_duration\": 1407750300}], \"total_llm_calls\": 2, \"stage_timings\": [{\"stage\": \"Atomic Fact Extractor\", \"call_count\": 1, \"elapsed_seconds\": 5.698}, {\"stage\": \"Fact Alignment\", \"call_count\": 1, \"elapsed_seconds\": 3.46}], \"total_llm_elapsed_seconds\": 9.158, \"total_request_elapsed_seconds\": 9.168}\n"
+  },
+  {
+    "case_id": "final_v2_05_monthly_backup_duplicate",
+    "category": "Semantic duplicate",
+    "status": "PASS",
+    "elapsed_seconds": 9.32869109999956,
+    "llm_calls": 2,
+    "cross_sender_pollution": false,
+    "safe_abstain": false,
+    "behavior_errors": [],
+    "destructive_errors": [],
+    "initial_memories": [
+      "联系人每逢月底都会备份个人电脑的重要文件",
+      "联系人喜欢使用纸质日历"
+    ],
+    "working_memory": [],
+    "atomic_facts": [
+      {
+        "source_span": "每个月快结束的时候，我都会把电脑里的重要资料做一次备份。",
+        "kind": "persistent",
+        "operation_hint": "add",
+        "fact": "联系人每个月快结束的时候都会把电脑里的重要资料做一次备份。",
+        "constraints": [
+          "每个月快结束的时候",
+          "我都会把电脑里的重要资料做一次备份"
+        ]
+      }
+    ],
+    "per_fact": [
+      {
+        "atomic_fact": {
+          "source_span": "每个月快结束的时候，我都会把电脑里的重要资料做一次备份。",
+          "kind": "persistent",
+          "operation_hint": "add",
+          "fact": "联系人每个月快结束的时候都会把电脑里的重要资料做一次备份。",
+          "constraints": [
+            "每个月快结束的时候",
+            "我都会把电脑里的重要资料做一次备份"
+          ]
+        },
+        "retrieval_candidates": [
+          {
+            "index": 0,
+            "memory": "联系人每逢月底都会备份个人电脑的重要文件",
+            "score": 0.9080064296722412
+          },
+          {
+            "index": 1,
+            "memory": "联系人喜欢使用纸质日历",
+            "score": 0.4029542803764343
+          }
+        ],
+        "alignment": {
+          "decision": "DUPLICATE",
+          "target_index": 0,
+          "memory": null,
+          "raw_memory": null
+        },
+        "validation": {},
+        "action": null,
+        "applied": false
+      }
+    ],
+    "final_memories": [
+      "联系人每逢月底都会备份个人电脑的重要文件",
+      "联系人喜欢使用纸质日历"
+    ],
+    "sentinel_memories": [
+      "联系人每周备份公司电脑",
+      "联系人只使用电子日历"
+    ],
+    "expected_semantics": [
+      "the initial memory set remains exact"
+    ],
+    "captured_log": "OLLAMA_TIMING: {\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1648, \"started_at\": \"2026-09-25T11:54:14.828+08:00\", \"elapsed_seconds\": 5.893, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 247, \"load_duration\": 8535600, \"prompt_eval_count\": 811, \"prompt_eval_duration\": 685714000, \"eval_count\": 94, \"eval_duration\": 3126271000, \"total_duration\": 3845233800}\nOLLAMA_TIMING: {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1099, \"started_at\": \"2026-09-25T11:54:20.735+08:00\", \"elapsed_seconds\": 3.42, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 68, \"load_duration\": 4984700, \"prompt_eval_count\": 530, \"prompt_eval_duration\": 539304000, \"eval_count\": 25, \"eval_duration\": 791133000, \"total_duration\": 1366189100}\nMEMORY_V2_TIMING_SUMMARY: {\"outcome\": \"success\", \"calls\": [{\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1648, \"started_at\": \"2026-09-25T11:54:14.828+08:00\", \"elapsed_seconds\": 5.893, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 247, \"load_duration\": 8535600, \"prompt_eval_count\": 811, \"prompt_eval_duration\": 685714000, \"eval_count\": 94, \"eval_duration\": 3126271000, \"total_duration\": 3845233800}, {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1099, \"started_at\": \"2026-09-25T11:54:20.735+08:00\", \"elapsed_seconds\": 3.42, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 68, \"load_duration\": 4984700, \"prompt_eval_count\": 530, \"prompt_eval_duration\": 539304000, \"eval_count\": 25, \"eval_duration\": 791133000, \"total_duration\": 1366189100}], \"total_llm_calls\": 2, \"stage_timings\": [{\"stage\": \"Atomic Fact Extractor\", \"call_count\": 1, \"elapsed_seconds\": 5.893}, {\"stage\": \"Fact Alignment\", \"call_count\": 1, \"elapsed_seconds\": 3.42}], \"total_llm_elapsed_seconds\": 9.313, \"total_request_elapsed_seconds\": 9.329}\n"
+  },
+  {
+    "case_id": "final_v2_06_distinct_collection_object",
+    "category": "Non-duplicate same category",
+    "status": "BEHAVIOR_FAIL",
+    "elapsed_seconds": 8.6999964000006,
+    "llm_calls": 2,
+    "cross_sender_pollution": false,
+    "safe_abstain": true,
+    "behavior_errors": [
+      "memory count expected 3, got 2",
+      "required semantics missing: bookstore stamp collection"
+    ],
+    "destructive_errors": [],
+    "initial_memories": [
+      "联系人长期收藏老式机械铅笔",
+      "联系人每周给叔叔打一次电话"
+    ],
+    "working_memory": [],
+    "atomic_facts": [
+      {
+        "source_span": "我还长期收集各地独立书店的印章。",
+        "kind": "persistent",
+        "operation_hint": "add",
+        "fact": "联系人长期收集各地独立书店的印章。",
+        "constraints": [
+          "我还长期收集各地独立书店的印章"
+        ]
+      }
+    ],
+    "per_fact": [
+      {
+        "atomic_fact": {
+          "source_span": "我还长期收集各地独立书店的印章。",
+          "kind": "persistent",
+          "operation_hint": "add",
+          "fact": "联系人长期收集各地独立书店的印章。",
+          "constraints": [
+            "我还长期收集各地独立书店的印章"
+          ]
+        },
+        "retrieval_candidates": [
+          {
+            "index": 0,
+            "memory": "联系人长期收藏老式机械铅笔",
+            "score": 0.41192755103111267
+          }
+        ],
+        "alignment": {
+          "decision": "DUPLICATE",
+          "target_index": 0,
+          "memory": null,
+          "raw_memory": null
+        },
+        "validation": {},
+        "action": null,
+        "applied": false
+      }
+    ],
+    "final_memories": [
+      "联系人长期收藏老式机械铅笔",
+      "联系人每周给叔叔打一次电话"
+    ],
+    "sentinel_memories": [
+      "联系人收藏各地独立书店印章",
+      "联系人喜欢自动铅笔"
+    ],
+    "expected_semantics": [
+      "preserve mechanical-pencil collection",
+      "add independent-bookstore stamp collection"
+    ],
+    "captured_log": "OLLAMA_TIMING: {\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1643, \"started_at\": \"2026-09-25T11:54:24.157+08:00\", \"elapsed_seconds\": 5.296, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 208, \"load_duration\": 5271400, \"prompt_eval_count\": 809, \"prompt_eval_duration\": 732822000, \"eval_count\": 73, \"eval_duration\": 2472683000, \"total_duration\": 3240116200}\nOLLAMA_TIMING: {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1038, \"started_at\": \"2026-09-25T11:54:29.465+08:00\", \"elapsed_seconds\": 3.391, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 68, \"load_duration\": 12110200, \"prompt_eval_count\": 495, \"prompt_eval_duration\": 490745000, \"eval_count\": 25, \"eval_duration\": 802563000, \"total_duration\": 1340838600}\nMEMORY_V2_TIMING_SUMMARY: {\"outcome\": \"success\", \"calls\": [{\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1643, \"started_at\": \"2026-09-25T11:54:24.157+08:00\", \"elapsed_seconds\": 5.296, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 208, \"load_duration\": 5271400, \"prompt_eval_count\": 809, \"prompt_eval_duration\": 732822000, \"eval_count\": 73, \"eval_duration\": 2472683000, \"total_duration\": 3240116200}, {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1038, \"started_at\": \"2026-09-25T11:54:29.465+08:00\", \"elapsed_seconds\": 3.391, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 68, \"load_duration\": 12110200, \"prompt_eval_count\": 495, \"prompt_eval_duration\": 490745000, \"eval_count\": 25, \"eval_duration\": 802563000, \"total_duration\": 1340838600}], \"total_llm_calls\": 2, \"stage_timings\": [{\"stage\": \"Atomic Fact Extractor\", \"call_count\": 1, \"elapsed_seconds\": 5.296}, {\"stage\": \"Fact Alignment\", \"call_count\": 1, \"elapsed_seconds\": 3.391}], \"total_llm_elapsed_seconds\": 8.687, \"total_request_elapsed_seconds\": 8.7}\n"
+  },
+  {
+    "case_id": "final_v2_07_shared_to_solo_rental",
+    "category": "UPDATE current status",
+    "status": "BEHAVIOR_FAIL",
+    "elapsed_seconds": 9.329722600000423,
+    "llm_calls": 2,
+    "cross_sender_pollution": false,
+    "safe_abstain": false,
+    "behavior_errors": [
+      "memory count expected 2, got 1",
+      "required semantics missing: solo apartment state",
+      "required semantics missing: rental transition timing"
+    ],
+    "destructive_errors": [],
+    "initial_memories": [
+      "联系人目前租住在一套合租公寓",
+      "联系人每季度给祖母寄一次照片"
+    ],
+    "working_memory": [],
+    "atomic_facts": [
+      {
+        "source_span": "合租合同到这个月底就结束，之后我已经签好一间独居小公寓。",
+        "kind": "persistent_change",
+        "operation_hint": "end",
+        "fact": "联系人结束合租合同并开始独居生活",
+        "constraints": [
+          "合租合同到这个月底就结束",
+          "之后我已经签好一间独居小公寓"
+        ]
+      }
+    ],
+    "per_fact": [
+      {
+        "atomic_fact": {
+          "source_span": "合租合同到这个月底就结束，之后我已经签好一间独居小公寓。",
+          "kind": "persistent_change",
+          "operation_hint": "end",
+          "fact": "联系人结束合租合同并开始独居生活",
+          "constraints": [
+            "合租合同到这个月底就结束",
+            "之后我已经签好一间独居小公寓"
+          ]
+        },
+        "retrieval_candidates": [
+          {
+            "index": 0,
+            "memory": "联系人目前租住在一套合租公寓",
+            "score": 0.6751317977905273
+          },
+          {
+            "index": 1,
+            "memory": "联系人每季度给祖母寄一次照片",
+            "score": 0.1892567276954651
+          }
+        ],
+        "alignment": {
+          "decision": "DELETE",
+          "target_index": 0,
+          "memory": null,
+          "raw_memory": null
+        },
+        "validation": {},
+        "action": {
+          "action": "DELETE",
+          "target": "联系人目前租住在一套合租公寓",
+          "memory": null
+        },
+        "applied": true
+      }
+    ],
+    "final_memories": [
+      "联系人每季度给祖母寄一次照片"
+    ],
+    "sentinel_memories": [
+      "联系人目前租住在一套合租公寓",
+      "联系人每月拜访一次祖母"
+    ],
+    "expected_semantics": [
+      "the shared-rental state is gone",
+      "solo apartment after the end of this month",
+      "the family photo habit remains"
+    ],
+    "captured_log": "OLLAMA_TIMING: {\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1648, \"started_at\": \"2026-09-25T11:54:32.857+08:00\", \"elapsed_seconds\": 5.945, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 241, \"load_duration\": 15228000, \"prompt_eval_count\": 814, \"prompt_eval_duration\": 634811000, \"eval_count\": 97, \"eval_duration\": 3197127000, \"total_duration\": 3882769900}\nOLLAMA_TIMING: {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1090, \"started_at\": \"2026-09-25T11:54:38.815+08:00\", \"elapsed_seconds\": 3.371, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 65, \"load_duration\": 16116900, \"prompt_eval_count\": 534, \"prompt_eval_duration\": 515861999, \"eval_count\": 24, \"eval_duration\": 749712000, \"total_duration\": 1328630000}\nMEMORY_V2_TIMING_SUMMARY: {\"outcome\": \"success\", \"calls\": [{\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1648, \"started_at\": \"2026-09-25T11:54:32.857+08:00\", \"elapsed_seconds\": 5.945, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 241, \"load_duration\": 15228000, \"prompt_eval_count\": 814, \"prompt_eval_duration\": 634811000, \"eval_count\": 97, \"eval_duration\": 3197127000, \"total_duration\": 3882769900}, {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1090, \"started_at\": \"2026-09-25T11:54:38.815+08:00\", \"elapsed_seconds\": 3.371, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 65, \"load_duration\": 16116900, \"prompt_eval_count\": 534, \"prompt_eval_duration\": 515861999, \"eval_count\": 24, \"eval_duration\": 749712000, \"total_duration\": 1328630000}], \"total_llm_calls\": 2, \"stage_timings\": [{\"stage\": \"Atomic Fact Extractor\", \"call_count\": 1, \"elapsed_seconds\": 5.945}, {\"stage\": \"Fact Alignment\", \"call_count\": 1, \"elapsed_seconds\": 3.371}], \"total_llm_elapsed_seconds\": 9.316, \"total_request_elapsed_seconds\": 9.33}\n"
+  },
+  {
+    "case_id": "final_v2_08_weekday_sleep_time_update",
+    "category": "UPDATE time state",
+    "status": "BEHAVIOR_FAIL",
+    "elapsed_seconds": 10.242549000000508,
+    "llm_calls": 2,
+    "cross_sender_pollution": false,
+    "safe_abstain": false,
+    "behavior_errors": [
+      "forbidden semantics present: old sleep time remains current"
+    ],
+    "destructive_errors": [],
+    "initial_memories": [
+      "联系人通常晚上十一点半睡觉",
+      "联系人每月清洗一次空调滤网"
+    ],
+    "working_memory": [],
+    "atomic_facts": [
+      {
+        "source_span": "现在工作日十点四十五分就睡，不再拖到十一点半。",
+        "kind": "persistent_change",
+        "operation_hint": "update",
+        "fact": "联系人现在工作日十点四十五分就睡，不再拖到十一点半。",
+        "constraints": [
+          "现在工作日十点四十五分就睡，不再拖到十一点半"
+        ]
+      }
+    ],
+    "per_fact": [
+      {
+        "atomic_fact": {
+          "source_span": "现在工作日十点四十五分就睡，不再拖到十一点半。",
+          "kind": "persistent_change",
+          "operation_hint": "update",
+          "fact": "联系人现在工作日十点四十五分就睡，不再拖到十一点半。",
+          "constraints": [
+            "现在工作日十点四十五分就睡，不再拖到十一点半"
+          ]
+        },
+        "retrieval_candidates": [
+          {
+            "index": 0,
+            "memory": "联系人通常晚上十一点半睡觉",
+            "score": 0.8114618062973022
+          },
+          {
+            "index": 1,
+            "memory": "联系人每月清洗一次空调滤网",
+            "score": 0.30221498012542725
+          }
+        ],
+        "alignment": {
+          "decision": "UPDATE",
+          "target_index": 0,
+          "memory": "联系人现在工作日十点四十五分就睡，不再拖到十一点半。",
+          "raw_memory": "联系人现在工作日十点四十五分就睡，不再拖到十一点半。"
+        },
+        "validation": {},
+        "action": {
+          "action": "UPDATE",
+          "target": "联系人通常晚上十一点半睡觉",
+          "memory": "联系人现在工作日十点四十五分就睡，不再拖到十一点半。"
+        },
+        "applied": true
+      }
+    ],
+    "final_memories": [
+      "联系人现在工作日十点四十五分就睡，不再拖到十一点半。",
+      "联系人每月清洗一次空调滤网"
+    ],
+    "sentinel_memories": [
+      "联系人通常晚上十一点半睡觉",
+      "联系人习惯早上六点起床"
+    ],
+    "expected_semantics": [
+      "weekday sleep at 10:45 PM",
+      "old 11:30 PM state removed",
+      "air-filter maintenance preserved"
+    ],
+    "captured_log": "OLLAMA_TIMING: {\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1650, \"started_at\": \"2026-09-25T11:54:42.186+08:00\", \"elapsed_seconds\": 6.177, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 241, \"load_duration\": 6845300, \"prompt_eval_count\": 818, \"prompt_eval_duration\": 711095000, \"eval_count\": 102, \"eval_duration\": 3386498000, \"total_duration\": 4139349000}\nOLLAMA_TIMING: {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1088, \"started_at\": \"2026-09-25T11:54:48.378+08:00\", \"elapsed_seconds\": 4.051, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 89, \"load_duration\": 6073200, \"prompt_eval_count\": 537, \"prompt_eval_duration\": 545154000, \"eval_count\": 44, \"eval_duration\": 1420678000, \"total_duration\": 2003068300}\nMEMORY_V2_TIMING_SUMMARY: {\"outcome\": \"success\", \"calls\": [{\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1650, \"started_at\": \"2026-09-25T11:54:42.186+08:00\", \"elapsed_seconds\": 6.177, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 241, \"load_duration\": 6845300, \"prompt_eval_count\": 818, \"prompt_eval_duration\": 711095000, \"eval_count\": 102, \"eval_duration\": 3386498000, \"total_duration\": 4139349000}, {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1088, \"started_at\": \"2026-09-25T11:54:48.378+08:00\", \"elapsed_seconds\": 4.051, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 89, \"load_duration\": 6073200, \"prompt_eval_count\": 537, \"prompt_eval_duration\": 545154000, \"eval_count\": 44, \"eval_duration\": 1420678000, \"total_duration\": 2003068300}], \"total_llm_calls\": 2, \"stage_timings\": [{\"stage\": \"Atomic Fact Extractor\", \"call_count\": 1, \"elapsed_seconds\": 6.177}, {\"stage\": \"Fact Alignment\", \"call_count\": 1, \"elapsed_seconds\": 4.051}], \"total_llm_elapsed_seconds\": 10.228, \"total_request_elapsed_seconds\": 10.242}\n"
+  },
+  {
+    "case_id": "final_v2_09_end_herb_garden_care",
+    "category": "DELETE explicit termination",
+    "status": "PASS",
+    "elapsed_seconds": 9.097659300000487,
+    "llm_calls": 2,
+    "cross_sender_pollution": false,
+    "safe_abstain": false,
+    "behavior_errors": [],
+    "destructive_errors": [],
+    "initial_memories": [
+      "联系人每周维护一次阳台香草盆栽",
+      "联系人习惯在周五整理电子邮箱"
+    ],
+    "working_memory": [],
+    "atomic_facts": [
+      {
+        "source_span": "阳台那批香草我全送人了，以后也不再养，日常养护可以结束了。",
+        "kind": "persistent_change",
+        "operation_hint": "end",
+        "fact": "联系人不再养护阳台那批香草",
+        "constraints": [
+          "阳台那批香草",
+          "以后也不再养"
+        ]
+      }
+    ],
+    "per_fact": [
+      {
+        "atomic_fact": {
+          "source_span": "阳台那批香草我全送人了，以后也不再养，日常养护可以结束了。",
+          "kind": "persistent_change",
+          "operation_hint": "end",
+          "fact": "联系人不再养护阳台那批香草",
+          "constraints": [
+            "阳台那批香草",
+            "以后也不再养"
+          ]
+        },
+        "retrieval_candidates": [
+          {
+            "index": 0,
+            "memory": "联系人每周维护一次阳台香草盆栽",
+            "score": 0.2742120325565338
+          },
+          {
+            "index": 1,
+            "memory": "联系人习惯在周五整理电子邮箱",
+            "score": 0.14227308332920074
+          }
+        ],
+        "alignment": {
+          "decision": "DELETE",
+          "target_index": 0,
+          "memory": null,
+          "raw_memory": null
+        },
+        "validation": {},
+        "action": {
+          "action": "DELETE",
+          "target": "联系人每周维护一次阳台香草盆栽",
+          "memory": null
+        },
+        "applied": true
+      }
+    ],
+    "final_memories": [
+      "联系人习惯在周五整理电子邮箱"
+    ],
+    "sentinel_memories": [
+      "联系人每周维护一次阳台香草盆栽",
+      "联系人种植室内蕨类植物"
+    ],
+    "expected_semantics": [
+      "only the email habit remains"
+    ],
+    "captured_log": "OLLAMA_TIMING: {\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1649, \"started_at\": \"2026-09-25T11:54:52.430+08:00\", \"elapsed_seconds\": 5.726, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 225, \"load_duration\": 4837700, \"prompt_eval_count\": 816, \"prompt_eval_duration\": 674653000, \"eval_count\": 89, \"eval_duration\": 2954724000, \"total_duration\": 3664087900}\nOLLAMA_TIMING: {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1075, \"started_at\": \"2026-09-25T11:54:58.168+08:00\", \"elapsed_seconds\": 3.359, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 65, \"load_duration\": 9645600, \"prompt_eval_count\": 525, \"prompt_eval_duration\": 519884000, \"eval_count\": 24, \"eval_duration\": 747129000, \"total_duration\": 1309497200}\nMEMORY_V2_TIMING_SUMMARY: {\"outcome\": \"success\", \"calls\": [{\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1649, \"started_at\": \"2026-09-25T11:54:52.430+08:00\", \"elapsed_seconds\": 5.726, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 225, \"load_duration\": 4837700, \"prompt_eval_count\": 816, \"prompt_eval_duration\": 674653000, \"eval_count\": 89, \"eval_duration\": 2954724000, \"total_duration\": 3664087900}, {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1075, \"started_at\": \"2026-09-25T11:54:58.168+08:00\", \"elapsed_seconds\": 3.359, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 65, \"load_duration\": 9645600, \"prompt_eval_count\": 525, \"prompt_eval_duration\": 519884000, \"eval_count\": 24, \"eval_duration\": 747129000, \"total_duration\": 1309497200}], \"total_llm_calls\": 2, \"stage_timings\": [{\"stage\": \"Atomic Fact Extractor\", \"call_count\": 1, \"elapsed_seconds\": 5.726}, {\"stage\": \"Fact Alignment\", \"call_count\": 1, \"elapsed_seconds\": 3.359}], \"total_llm_elapsed_seconds\": 9.085, \"total_request_elapsed_seconds\": 9.098}\n"
+  },
+  {
+    "case_id": "final_v2_10_return_rented_lighting_kit",
+    "category": "DELETE paraphrase",
+    "status": "BEHAVIOR_FAIL",
+    "elapsed_seconds": 10.578595400000268,
+    "llm_calls": 2,
+    "cross_sender_pollution": false,
+    "safe_abstain": true,
+    "behavior_errors": [
+      "final memory set does not match exactly",
+      "memory count expected 1, got 2",
+      "forbidden exact memory still present: 联系人租用了按月续费的摄影灯光套装",
+      "forbidden semantics present: active lighting rental"
+    ],
+    "destructive_errors": [],
+    "initial_memories": [
+      "联系人租用了按月续费的摄影灯光套装",
+      "联系人喜欢冲洗黑白胶卷"
+    ],
+    "working_memory": [],
+    "atomic_facts": [
+      {
+        "source_span": "棚拍那套灯月底就归还，自动续租也关了，后面不会再留着。",
+        "kind": "persistent",
+        "operation_hint": "add",
+        "fact": "联系人不再续租棚拍那套灯",
+        "constraints": [
+          "棚拍那套灯",
+          "月底就归还",
+          "自动续租也关了",
+          "后面不会再留着"
+        ]
+      }
+    ],
+    "per_fact": [
+      {
+        "atomic_fact": {
+          "source_span": "棚拍那套灯月底就归还，自动续租也关了，后面不会再留着。",
+          "kind": "persistent",
+          "operation_hint": "add",
+          "fact": "联系人不再续租棚拍那套灯",
+          "constraints": [
+            "棚拍那套灯",
+            "月底就归还",
+            "自动续租也关了",
+            "后面不会再留着"
+          ]
+        },
+        "retrieval_candidates": [
+          {
+            "index": 0,
+            "memory": "联系人租用了按月续费的摄影灯光套装",
+            "score": 0.5311391353607178
+          }
+        ],
+        "alignment": {
+          "decision": "AMBIGUOUS",
+          "target_index": null,
+          "memory": null,
+          "raw_memory": "联系人不再续租棚拍那套灯，月底就归还，自动续租也关了，后面不会再留着。",
+          "safety_reason": "persistent add cannot authorize DELETE"
+        },
+        "validation": {},
+        "action": null,
+        "applied": false
+      }
+    ],
+    "final_memories": [
+      "联系人租用了按月续费的摄影灯光套装",
+      "联系人喜欢冲洗黑白胶卷"
+    ],
+    "sentinel_memories": [
+      "联系人租用了按月续费的摄影灯光套装",
+      "联系人拥有一台胶片扫描仪"
+    ],
+    "expected_semantics": [
+      "film-development preference remains"
+    ],
+    "captured_log": "OLLAMA_TIMING: {\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1647, \"started_at\": \"2026-09-25T11:55:01.527+08:00\", \"elapsed_seconds\": 6.246, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 242, \"load_duration\": 6928200, \"prompt_eval_count\": 817, \"prompt_eval_duration\": 726111000, \"eval_count\": 105, \"eval_duration\": 3430829000, \"total_duration\": 4189645500}\nOLLAMA_TIMING: {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1069, \"started_at\": \"2026-09-25T11:55:07.787+08:00\", \"elapsed_seconds\": 4.319, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 98, \"load_duration\": 5790000, \"prompt_eval_count\": 528, \"prompt_eval_duration\": 556881000, \"eval_count\": 52, \"eval_duration\": 1678098000, \"total_duration\": 2270398200}\nMEMORY_V2_TIMING_SUMMARY: {\"outcome\": \"success\", \"calls\": [{\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1647, \"started_at\": \"2026-09-25T11:55:01.527+08:00\", \"elapsed_seconds\": 6.246, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 242, \"load_duration\": 6928200, \"prompt_eval_count\": 817, \"prompt_eval_duration\": 726111000, \"eval_count\": 105, \"eval_duration\": 3430829000, \"total_duration\": 4189645500}, {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1069, \"started_at\": \"2026-09-25T11:55:07.787+08:00\", \"elapsed_seconds\": 4.319, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 98, \"load_duration\": 5790000, \"prompt_eval_count\": 528, \"prompt_eval_duration\": 556881000, \"eval_count\": 52, \"eval_duration\": 1678098000, \"total_duration\": 2270398200}], \"total_llm_calls\": 2, \"stage_timings\": [{\"stage\": \"Atomic Fact Extractor\", \"call_count\": 1, \"elapsed_seconds\": 6.246}, {\"stage\": \"Fact Alignment\", \"call_count\": 1, \"elapsed_seconds\": 4.319}], \"total_llm_elapsed_seconds\": 10.565, \"total_request_elapsed_seconds\": 10.579}\n"
+  },
+  {
+    "case_id": "final_v2_11_terrace_watering_with_takeout",
+    "category": "Persistent plus transient",
+    "status": "PASS",
+    "elapsed_seconds": 17.02398379999977,
+    "llm_calls": 4,
+    "cross_sender_pollution": false,
+    "safe_abstain": false,
+    "behavior_errors": [],
+    "destructive_errors": [],
+    "initial_memories": [
+      "联系人喜欢修复旧收音机"
+    ],
+    "working_memory": [],
+    "atomic_facts": [
+      {
+        "source_span": "我从这个月开始每天早上给露台植物浇水",
+        "kind": "persistent",
+        "operation_hint": "add",
+        "fact": "联系人从这个月开始每天早上给露台植物浇水",
+        "constraints": [
+          "从这个月开始每天早上",
+          "给露台植物浇水"
+        ]
+      },
+      {
+        "source_span": "眼下正在楼下拿外卖",
+        "kind": "transient",
+        "operation_hint": "none",
+        "fact": null,
+        "constraints": [
+          "眼下正在楼下拿外卖"
+        ]
+      }
+    ],
+    "per_fact": [
+      {
+        "atomic_fact": {
+          "source_span": "我从这个月开始每天早上给露台植物浇水",
+          "kind": "persistent",
+          "operation_hint": "add",
+          "fact": "联系人从这个月开始每天早上给露台植物浇水",
+          "constraints": [
+            "从这个月开始每天早上",
+            "给露台植物浇水"
+          ]
+        },
+        "retrieval_candidates": [],
+        "alignment": {
+          "decision": "NEW",
+          "target_index": null,
+          "memory": "联系人从这个月开始每天早上给露台植物浇水",
+          "raw_memory": "联系人从这个月开始每天早上给露台植物浇水"
+        },
+        "validation": {
+          "schema": true,
+          "evidence": {
+            "supported": true
+          },
+          "worthiness": {
+            "memory_type": "habit",
+            "should_save": true
+          }
+        },
+        "action": {
+          "action": "ADD",
+          "memory": "联系人从这个月开始每天早上给露台植物浇水"
+        },
+        "applied": true
+      },
+      {
+        "atomic_fact": {
+          "source_span": "眼下正在楼下拿外卖",
+          "kind": "transient",
+          "operation_hint": "none",
+          "fact": null,
+          "constraints": [
+            "眼下正在楼下拿外卖"
+          ]
+        },
+        "retrieval_candidates": [],
+        "alignment": {
+          "decision": "IGNORED_NON_PERSISTENT",
+          "target_index": null,
+          "memory": null
+        },
+        "validation": {},
+        "action": null,
+        "applied": false
+      }
+    ],
+    "final_memories": [
+      "联系人喜欢修复旧收音机",
+      "联系人从这个月开始每天早上给露台植物浇水"
+    ],
+    "sentinel_memories": [
+      "联系人每天给露台植物浇水",
+      "联系人经常自己做晚饭"
+    ],
+    "expected_semantics": [
+      "daily morning terrace watering from this month",
+      "no takeaway-pickup memory"
+    ],
+    "captured_log": "OLLAMA_TIMING: {\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1649, \"started_at\": \"2026-09-25T11:55:12.106+08:00\", \"elapsed_seconds\": 7.285, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 390, \"load_duration\": 5321600, \"prompt_eval_count\": 814, \"prompt_eval_duration\": 721180000, \"eval_count\": 136, \"eval_duration\": 4460134000, \"total_duration\": 5210312200}\nOLLAMA_TIMING: {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1038, \"started_at\": \"2026-09-25T11:55:19.403+08:00\", \"elapsed_seconds\": 3.752, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 83, \"load_duration\": 6791300, \"prompt_eval_count\": 495, \"prompt_eval_duration\": 508245000, \"eval_count\": 36, \"eval_duration\": 1150179000, \"total_duration\": 1708617800}\nOLLAMA_TIMING: {\"stage\": \"ADD Evidence Gate\", \"prompt_chars\": 1136, \"started_at\": \"2026-09-25T11:55:23.155+08:00\", \"elapsed_seconds\": 2.857, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 19, \"load_duration\": 6824600, \"prompt_eval_count\": 621, \"prompt_eval_duration\": 585278000, \"eval_count\": 6, \"eval_duration\": 164495000, \"total_duration\": 779511800}\nOLLAMA_TIMING: {\"stage\": \"Worthiness Gate\", \"prompt_chars\": 1879, \"started_at\": \"2026-09-25T11:55:26.012+08:00\", \"elapsed_seconds\": 3.118, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 30, \"load_duration\": 7254200, \"prompt_eval_count\": 909, \"prompt_eval_duration\": 703807000, \"eval_count\": 11, \"eval_duration\": 324496000, \"total_duration\": 1068970000}\nMEMORY_V2_TIMING_SUMMARY: {\"outcome\": \"success\", \"calls\": [{\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1649, \"started_at\": \"2026-09-25T11:55:12.106+08:00\", \"elapsed_seconds\": 7.285, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 390, \"load_duration\": 5321600, \"prompt_eval_count\": 814, \"prompt_eval_duration\": 721180000, \"eval_count\": 136, \"eval_duration\": 4460134000, \"total_duration\": 5210312200}, {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1038, \"started_at\": \"2026-09-25T11:55:19.403+08:00\", \"elapsed_seconds\": 3.752, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 83, \"load_duration\": 6791300, \"prompt_eval_count\": 495, \"prompt_eval_duration\": 508245000, \"eval_count\": 36, \"eval_duration\": 1150179000, \"total_duration\": 1708617800}, {\"stage\": \"ADD Evidence Gate\", \"prompt_chars\": 1136, \"started_at\": \"2026-09-25T11:55:23.155+08:00\", \"elapsed_seconds\": 2.857, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 19, \"load_duration\": 6824600, \"prompt_eval_count\": 621, \"prompt_eval_duration\": 585278000, \"eval_count\": 6, \"eval_duration\": 164495000, \"total_duration\": 779511800}, {\"stage\": \"Worthiness Gate\", \"prompt_chars\": 1879, \"started_at\": \"2026-09-25T11:55:26.012+08:00\", \"elapsed_seconds\": 3.118, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 30, \"load_duration\": 7254200, \"prompt_eval_count\": 909, \"prompt_eval_duration\": 703807000, \"eval_count\": 11, \"eval_duration\": 324496000, \"total_duration\": 1068970000}], \"total_llm_calls\": 4, \"stage_timings\": [{\"stage\": \"Atomic Fact Extractor\", \"call_count\": 1, \"elapsed_seconds\": 7.285}, {\"stage\": \"Fact Alignment\", \"call_count\": 1, \"elapsed_seconds\": 3.752}, {\"stage\": \"ADD Evidence Gate\", \"call_count\": 1, \"elapsed_seconds\": 2.857}, {\"stage\": \"Worthiness Gate\", \"call_count\": 1, \"elapsed_seconds\": 3.118}], \"total_llm_elapsed_seconds\": 17.012, \"total_request_elapsed_seconds\": 17.024}\n"
+  },
+  {
+    "case_id": "final_v2_12_family_delivery_and_night_patrol",
+    "category": "Two independent ADDs",
+    "status": "PASS",
+    "elapsed_seconds": 26.56147410000085,
+    "llm_calls": 7,
+    "cross_sender_pollution": false,
+    "safe_abstain": false,
+    "behavior_errors": [],
+    "destructive_errors": [],
+    "initial_memories": [
+      "联系人使用左手写字"
+    ],
+    "working_memory": [],
+    "atomic_facts": [
+      {
+        "source_span": "今年开始我固定参加社区夜间巡逻。",
+        "kind": "persistent",
+        "operation_hint": "add",
+        "fact": "联系人今年开始固定参加社区夜间巡逻。",
+        "constraints": [
+          "今年开始",
+          "固定参加社区夜间巡逻"
+        ]
+      },
+      {
+        "source_span": "每周日我负责给外婆送菜。",
+        "kind": "persistent",
+        "operation_hint": "add",
+        "fact": "联系人每周日负责给外婆送菜。",
+        "constraints": [
+          "每周日",
+          "负责给外婆送菜"
+        ]
+      }
+    ],
+    "per_fact": [
+      {
+        "atomic_fact": {
+          "source_span": "今年开始我固定参加社区夜间巡逻。",
+          "kind": "persistent",
+          "operation_hint": "add",
+          "fact": "联系人今年开始固定参加社区夜间巡逻。",
+          "constraints": [
+            "今年开始",
+            "固定参加社区夜间巡逻"
+          ]
+        },
+        "retrieval_candidates": [],
+        "alignment": {
+          "decision": "NEW",
+          "target_index": null,
+          "memory": "联系人今年开始固定参加社区夜间巡逻。",
+          "raw_memory": "联系人今年开始固定参加社区夜间巡逻。"
+        },
+        "validation": {
+          "schema": true,
+          "evidence": {
+            "supported": true
+          },
+          "worthiness": {
+            "memory_type": "habit",
+            "should_save": true
+          }
+        },
+        "action": {
+          "action": "ADD",
+          "memory": "联系人今年开始固定参加社区夜间巡逻。"
+        },
+        "applied": true
+      },
+      {
+        "atomic_fact": {
+          "source_span": "每周日我负责给外婆送菜。",
+          "kind": "persistent",
+          "operation_hint": "add",
+          "fact": "联系人每周日负责给外婆送菜。",
+          "constraints": [
+            "每周日",
+            "负责给外婆送菜"
+          ]
+        },
+        "retrieval_candidates": [],
+        "alignment": {
+          "decision": "NEW",
+          "target_index": null,
+          "memory": "联系人每周日负责给外婆送菜。",
+          "raw_memory": "联系人每周日负责给外婆送菜。"
+        },
+        "validation": {
+          "schema": true,
+          "evidence": {
+            "supported": true
+          },
+          "worthiness": {
+            "memory_type": "habit",
+            "should_save": true
+          }
+        },
+        "action": {
+          "action": "ADD",
+          "memory": "联系人每周日负责给外婆送菜。"
+        },
+        "applied": true
+      }
+    ],
+    "final_memories": [
+      "联系人使用左手写字",
+      "联系人今年开始固定参加社区夜间巡逻。",
+      "联系人每周日负责给外婆送菜。"
+    ],
+    "sentinel_memories": [
+      "联系人每周给外婆送菜",
+      "联系人参加社区白天巡逻"
+    ],
+    "expected_semantics": [
+      "community night patrol beginning this year",
+      "Sunday grocery delivery for grandmother",
+      "facts remain in separate memories"
+    ],
+    "captured_log": "OLLAMA_TIMING: {\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1651, \"started_at\": \"2026-09-25T11:55:29.131+08:00\", \"elapsed_seconds\": 7.346, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 393, \"load_duration\": 5808600, \"prompt_eval_count\": 815, \"prompt_eval_duration\": 736852000, \"eval_count\": 138, \"eval_duration\": 4511717000, \"total_duration\": 5297278400}\nOLLAMA_TIMING: {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1031, \"started_at\": \"2026-09-25T11:55:36.489+08:00\", \"elapsed_seconds\": 3.629, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 81, \"load_duration\": 6256900, \"prompt_eval_count\": 485, \"prompt_eval_duration\": 452756000, \"eval_count\": 33, \"eval_duration\": 1058002999, \"total_duration\": 1559711500}\nOLLAMA_TIMING: {\"stage\": \"ADD Evidence Gate\", \"prompt_chars\": 1136, \"started_at\": \"2026-09-25T11:55:40.119+08:00\", \"elapsed_seconds\": 2.829, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 25, \"load_duration\": 5700900, \"prompt_eval_count\": 618, \"prompt_eval_duration\": 466173000, \"eval_count\": 9, \"eval_duration\": 265177000, \"total_duration\": 769525600}\nOLLAMA_TIMING: {\"stage\": \"Worthiness Gate\", \"prompt_chars\": 1877, \"started_at\": \"2026-09-25T11:55:42.947+08:00\", \"elapsed_seconds\": 3.187, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 30, \"load_duration\": 5903100, \"prompt_eval_count\": 902, \"prompt_eval_duration\": 736281000, \"eval_count\": 11, \"eval_duration\": 325046000, \"total_duration\": 1112562500}\nOLLAMA_TIMING: {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1019, \"started_at\": \"2026-09-25T11:55:46.146+08:00\", \"elapsed_seconds\": 3.693, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 77, \"load_duration\": 8002800, \"prompt_eval_count\": 485, \"prompt_eval_duration\": 515616000, \"eval_count\": 33, \"eval_duration\": 1074383000, \"total_duration\": 1634745700}\nOLLAMA_TIMING: {\"stage\": \"ADD Evidence Gate\", \"prompt_chars\": 1132, \"started_at\": \"2026-09-25T11:55:49.839+08:00\", \"elapsed_seconds\": 2.791, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 19, \"load_duration\": 5771300, \"prompt_eval_count\": 618, \"prompt_eval_duration\": 530477000, \"eval_count\": 6, \"eval_duration\": 160374000, \"total_duration\": 731173300}\nOLLAMA_TIMING: {\"stage\": \"Worthiness Gate\", \"prompt_chars\": 1869, \"started_at\": \"2026-09-25T11:55:52.631+08:00\", \"elapsed_seconds\": 3.061, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 30, \"load_duration\": 5896200, \"prompt_eval_count\": 902, \"prompt_eval_duration\": 635119000, \"eval_count\": 11, \"eval_duration\": 327487000, \"total_duration\": 1007607800}\nMEMORY_V2_TIMING_SUMMARY: {\"outcome\": \"success\", \"calls\": [{\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1651, \"started_at\": \"2026-09-25T11:55:29.131+08:00\", \"elapsed_seconds\": 7.346, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 393, \"load_duration\": 5808600, \"prompt_eval_count\": 815, \"prompt_eval_duration\": 736852000, \"eval_count\": 138, \"eval_duration\": 4511717000, \"total_duration\": 5297278400}, {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1031, \"started_at\": \"2026-09-25T11:55:36.489+08:00\", \"elapsed_seconds\": 3.629, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 81, \"load_duration\": 6256900, \"prompt_eval_count\": 485, \"prompt_eval_duration\": 452756000, \"eval_count\": 33, \"eval_duration\": 1058002999, \"total_duration\": 1559711500}, {\"stage\": \"ADD Evidence Gate\", \"prompt_chars\": 1136, \"started_at\": \"2026-09-25T11:55:40.119+08:00\", \"elapsed_seconds\": 2.829, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 25, \"load_duration\": 5700900, \"prompt_eval_count\": 618, \"prompt_eval_duration\": 466173000, \"eval_count\": 9, \"eval_duration\": 265177000, \"total_duration\": 769525600}, {\"stage\": \"Worthiness Gate\", \"prompt_chars\": 1877, \"started_at\": \"2026-09-25T11:55:42.947+08:00\", \"elapsed_seconds\": 3.187, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 30, \"load_duration\": 5903100, \"prompt_eval_count\": 902, \"prompt_eval_duration\": 736281000, \"eval_count\": 11, \"eval_duration\": 325046000, \"total_duration\": 1112562500}, {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1019, \"started_at\": \"2026-09-25T11:55:46.146+08:00\", \"elapsed_seconds\": 3.693, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 77, \"load_duration\": 8002800, \"prompt_eval_count\": 485, \"prompt_eval_duration\": 515616000, \"eval_count\": 33, \"eval_duration\": 1074383000, \"total_duration\": 1634745700}, {\"stage\": \"ADD Evidence Gate\", \"prompt_chars\": 1132, \"started_at\": \"2026-09-25T11:55:49.839+08:00\", \"elapsed_seconds\": 2.791, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 19, \"load_duration\": 5771300, \"prompt_eval_count\": 618, \"prompt_eval_duration\": 530477000, \"eval_count\": 6, \"eval_duration\": 160374000, \"total_duration\": 731173300}, {\"stage\": \"Worthiness Gate\", \"prompt_chars\": 1869, \"started_at\": \"2026-09-25T11:55:52.631+08:00\", \"elapsed_seconds\": 3.061, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 30, \"load_duration\": 5896200, \"prompt_eval_count\": 902, \"prompt_eval_duration\": 635119000, \"eval_count\": 11, \"eval_duration\": 327487000, \"total_duration\": 1007607800}], \"total_llm_calls\": 7, \"stage_timings\": [{\"stage\": \"Atomic Fact Extractor\", \"call_count\": 1, \"elapsed_seconds\": 7.346}, {\"stage\": \"Fact Alignment\", \"call_count\": 2, \"elapsed_seconds\": 7.322}, {\"stage\": \"ADD Evidence Gate\", \"call_count\": 2, \"elapsed_seconds\": 5.62}, {\"stage\": \"Worthiness Gate\", \"call_count\": 2, \"elapsed_seconds\": 6.248}], \"total_llm_elapsed_seconds\": 26.536, \"total_request_elapsed_seconds\": 26.561}\n"
+  },
+  {
+    "case_id": "final_v2_13_bicycle_commute_and_insurance",
+    "category": "UPDATE plus ADD",
+    "status": "BEHAVIOR_FAIL",
+    "elapsed_seconds": 20.695616000000882,
+    "llm_calls": 5,
+    "cross_sender_pollution": false,
+    "safe_abstain": false,
+    "behavior_errors": [
+      "required semantics missing: new folding-bike commute",
+      "independent facts were not preserved in distinct memories: new folding-bike commute, annual bicycle insurance"
+    ],
+    "destructive_errors": [],
+    "initial_memories": [
+      "联系人目前乘地铁通勤",
+      "联系人每年参加一次家族聚会"
+    ],
+    "working_memory": [],
+    "atomic_facts": [
+      {
+        "source_span": "刚买了年度自行车保险。",
+        "kind": "persistent",
+        "operation_hint": "add",
+        "fact": "联系人刚买了年度自行车保险。",
+        "constraints": [
+          "刚买了年度自行车保险"
+        ]
+      },
+      {
+        "source_span": "从下周起不坐地铁，改骑折叠自行车。",
+        "kind": "persistent",
+        "operation_hint": "add",
+        "fact": "联系人从下周起不坐地铁，改骑折叠自行车。",
+        "constraints": [
+          "从下周起不坐地铁，改骑折叠自行车"
+        ]
+      }
+    ],
+    "per_fact": [
+      {
+        "atomic_fact": {
+          "source_span": "刚买了年度自行车保险。",
+          "kind": "persistent",
+          "operation_hint": "add",
+          "fact": "联系人刚买了年度自行车保险。",
+          "constraints": [
+            "刚买了年度自行车保险"
+          ]
+        },
+        "retrieval_candidates": [],
+        "alignment": {
+          "decision": "NEW",
+          "target_index": null,
+          "memory": "联系人刚买了年度自行车保险。",
+          "raw_memory": "联系人刚买了年度自行车保险。"
+        },
+        "validation": {
+          "schema": true,
+          "evidence": {
+            "supported": true
+          },
+          "worthiness": {
+            "memory_type": "preference",
+            "should_save": true
+          }
+        },
+        "action": {
+          "action": "ADD",
+          "memory": "联系人刚买了年度自行车保险。"
+        },
+        "applied": true
+      },
+      {
+        "atomic_fact": {
+          "source_span": "从下周起不坐地铁，改骑折叠自行车。",
+          "kind": "persistent",
+          "operation_hint": "add",
+          "fact": "联系人从下周起不坐地铁，改骑折叠自行车。",
+          "constraints": [
+            "从下周起不坐地铁，改骑折叠自行车"
+          ]
+        },
+        "retrieval_candidates": [
+          {
+            "index": 0,
+            "memory": "联系人目前乘地铁通勤",
+            "score": 0.5190705060958862
+          }
+        ],
+        "alignment": {
+          "decision": "UPDATE",
+          "target_index": 0,
+          "memory": "联系人从下周起不坐地铁，改骑折叠自行车。",
+          "raw_memory": "联系人从下周起不坐地铁，改骑折叠自行车。"
+        },
+        "validation": {},
+        "action": {
+          "action": "UPDATE",
+          "target": "联系人目前乘地铁通勤",
+          "memory": "联系人从下周起不坐地铁，改骑折叠自行车。"
+        },
+        "applied": true
+      }
+    ],
+    "final_memories": [
+      "联系人从下周起不坐地铁，改骑折叠自行车。",
+      "联系人每年参加一次家族聚会",
+      "联系人刚买了年度自行车保险。"
+    ],
+    "sentinel_memories": [
+      "联系人目前乘地铁通勤",
+      "联系人购买了自行车保险"
+    ],
+    "expected_semantics": [
+      "folding-bike commute from next week",
+      "annual bicycle insurance",
+      "family gathering remains"
+    ],
+    "captured_log": "OLLAMA_TIMING: {\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1657, \"started_at\": \"2026-09-25T11:55:55.692+08:00\", \"elapsed_seconds\": 7.293, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 399, \"load_duration\": 7461400, \"prompt_eval_count\": 819, \"prompt_eval_duration\": 605392000, \"eval_count\": 139, \"eval_duration\": 4589150000, \"total_duration\": 5243002900}\nOLLAMA_TIMING: {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1014, \"started_at\": \"2026-09-25T11:56:02.998+08:00\", \"elapsed_seconds\": 3.557, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 77, \"load_duration\": 5857900, \"prompt_eval_count\": 476, \"prompt_eval_duration\": 480046000, \"eval_count\": 31, \"eval_duration\": 996823000, \"total_duration\": 1520298800}\nOLLAMA_TIMING: {\"stage\": \"ADD Evidence Gate\", \"prompt_chars\": 1138, \"started_at\": \"2026-09-25T11:56:06.556+08:00\", \"elapsed_seconds\": 2.835, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 19, \"load_duration\": 5962400, \"prompt_eval_count\": 620, \"prompt_eval_duration\": 600742000, \"eval_count\": 6, \"eval_duration\": 164723000, \"total_duration\": 796635500}\nOLLAMA_TIMING: {\"stage\": \"Worthiness Gate\", \"prompt_chars\": 1875, \"started_at\": \"2026-09-25T11:56:09.391+08:00\", \"elapsed_seconds\": 3.155, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 35, \"load_duration\": 5106700, \"prompt_eval_count\": 902, \"prompt_eval_duration\": 707099000, \"eval_count\": 12, \"eval_duration\": 356369000, \"total_duration\": 1100710600}\nOLLAMA_TIMING: {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1040, \"started_at\": \"2026-09-25T11:56:12.561+08:00\", \"elapsed_seconds\": 3.826, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 83, \"load_duration\": 6456000, \"prompt_eval_count\": 503, \"prompt_eval_duration\": 531027000, \"eval_count\": 38, \"eval_duration\": 1214491000, \"total_duration\": 1782675800}\nMEMORY_V2_TIMING_SUMMARY: {\"outcome\": \"success\", \"calls\": [{\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1657, \"started_at\": \"2026-09-25T11:55:55.692+08:00\", \"elapsed_seconds\": 7.293, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 399, \"load_duration\": 7461400, \"prompt_eval_count\": 819, \"prompt_eval_duration\": 605392000, \"eval_count\": 139, \"eval_duration\": 4589150000, \"total_duration\": 5243002900}, {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1014, \"started_at\": \"2026-09-25T11:56:02.998+08:00\", \"elapsed_seconds\": 3.557, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 77, \"load_duration\": 5857900, \"prompt_eval_count\": 476, \"prompt_eval_duration\": 480046000, \"eval_count\": 31, \"eval_duration\": 996823000, \"total_duration\": 1520298800}, {\"stage\": \"ADD Evidence Gate\", \"prompt_chars\": 1138, \"started_at\": \"2026-09-25T11:56:06.556+08:00\", \"elapsed_seconds\": 2.835, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 19, \"load_duration\": 5962400, \"prompt_eval_count\": 620, \"prompt_eval_duration\": 600742000, \"eval_count\": 6, \"eval_duration\": 164723000, \"total_duration\": 796635500}, {\"stage\": \"Worthiness Gate\", \"prompt_chars\": 1875, \"started_at\": \"2026-09-25T11:56:09.391+08:00\", \"elapsed_seconds\": 3.155, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 35, \"load_duration\": 5106700, \"prompt_eval_count\": 902, \"prompt_eval_duration\": 707099000, \"eval_count\": 12, \"eval_duration\": 356369000, \"total_duration\": 1100710600}, {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1040, \"started_at\": \"2026-09-25T11:56:12.561+08:00\", \"elapsed_seconds\": 3.826, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 83, \"load_duration\": 6456000, \"prompt_eval_count\": 503, \"prompt_eval_duration\": 531027000, \"eval_count\": 38, \"eval_duration\": 1214491000, \"total_duration\": 1782675800}], \"total_llm_calls\": 5, \"stage_timings\": [{\"stage\": \"Atomic Fact Extractor\", \"call_count\": 1, \"elapsed_seconds\": 7.293}, {\"stage\": \"Fact Alignment\", \"call_count\": 2, \"elapsed_seconds\": 7.383}, {\"stage\": \"ADD Evidence Gate\", \"call_count\": 1, \"elapsed_seconds\": 2.835}, {\"stage\": \"Worthiness Gate\", \"call_count\": 1, \"elapsed_seconds\": 3.155}], \"total_llm_elapsed_seconds\": 20.666, \"total_request_elapsed_seconds\": 20.696}\n"
+  },
+  {
+    "case_id": "final_v2_14_end_newsletter_start_sound_archive",
+    "category": "DELETE plus ADD",
+    "status": "BEHAVIOR_FAIL",
+    "elapsed_seconds": 8.503173399998559,
+    "llm_calls": 2,
+    "cross_sender_pollution": false,
+    "safe_abstain": true,
+    "behavior_errors": [
+      "forbidden exact memory still present: 联系人正在维护一份付费邮件通讯",
+      "required semantics missing: long-term city sound archive",
+      "forbidden semantics present: active paid newsletter"
+    ],
+    "destructive_errors": [],
+    "initial_memories": [
+      "联系人正在维护一份付费邮件通讯",
+      "联系人喜欢收集手绘地图"
+    ],
+    "working_memory": [],
+    "atomic_facts": [
+      {
+        "source_span": "接下来会长期制作一套城市声音档案。",
+        "kind": "persistent",
+        "operation_hint": "add",
+        "fact": "联系人长期制作一套城市声音档案。",
+        "constraints": [
+          "长期制作一套城市声音档案"
+        ]
+      }
+    ],
+    "per_fact": [
+      {
+        "atomic_fact": {
+          "source_span": "接下来会长期制作一套城市声音档案。",
+          "kind": "persistent",
+          "operation_hint": "add",
+          "fact": "联系人长期制作一套城市声音档案。",
+          "constraints": [
+            "长期制作一套城市声音档案"
+          ]
+        },
+        "retrieval_candidates": [
+          {
+            "index": 0,
+            "memory": "联系人喜欢收集手绘地图",
+            "score": 0.4220258891582489
+          }
+        ],
+        "alignment": {
+          "decision": "AMBIGUOUS",
+          "target_index": null,
+          "memory": null,
+          "raw_memory": null
+        },
+        "validation": {},
+        "action": null,
+        "applied": false
+      }
+    ],
+    "final_memories": [
+      "联系人正在维护一份付费邮件通讯",
+      "联系人喜欢收集手绘地图"
+    ],
+    "sentinel_memories": [
+      "联系人正在维护一份付费邮件通讯",
+      "联系人制作过城市声音作品"
+    ],
+    "expected_semantics": [
+      "paid newsletter no longer active",
+      "long-term city sound archive",
+      "map collection remains"
+    ],
+    "captured_log": "OLLAMA_TIMING: {\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1653, \"started_at\": \"2026-09-25T11:56:16.388+08:00\", \"elapsed_seconds\": 5.058, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 205, \"load_duration\": 6045700, \"prompt_eval_count\": 814, \"prompt_eval_duration\": 691720000, \"eval_count\": 70, \"eval_duration\": 2279630000, \"total_duration\": 3000447800}\nOLLAMA_TIMING: {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1033, \"started_at\": \"2026-09-25T11:56:21.458+08:00\", \"elapsed_seconds\": 3.434, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 71, \"load_duration\": 6579800, \"prompt_eval_count\": 490, \"prompt_eval_duration\": 507197000, \"eval_count\": 26, \"eval_duration\": 818494000, \"total_duration\": 1373068400}\nMEMORY_V2_TIMING_SUMMARY: {\"outcome\": \"success\", \"calls\": [{\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1653, \"started_at\": \"2026-09-25T11:56:16.388+08:00\", \"elapsed_seconds\": 5.058, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 205, \"load_duration\": 6045700, \"prompt_eval_count\": 814, \"prompt_eval_duration\": 691720000, \"eval_count\": 70, \"eval_duration\": 2279630000, \"total_duration\": 3000447800}, {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1033, \"started_at\": \"2026-09-25T11:56:21.458+08:00\", \"elapsed_seconds\": 3.434, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 71, \"load_duration\": 6579800, \"prompt_eval_count\": 490, \"prompt_eval_duration\": 507197000, \"eval_count\": 26, \"eval_duration\": 818494000, \"total_duration\": 1373068400}], \"total_llm_calls\": 2, \"stage_timings\": [{\"stage\": \"Atomic Fact Extractor\", \"call_count\": 1, \"elapsed_seconds\": 5.058}, {\"stage\": \"Fact Alignment\", \"call_count\": 1, \"elapsed_seconds\": 3.434}], \"total_llm_elapsed_seconds\": 8.492, \"total_request_elapsed_seconds\": 8.503}\n"
+  },
+  {
+    "case_id": "final_v2_15_band_exit_subtitle_service_and_rain",
+    "category": "Change plus ADD plus transient",
+    "status": "PASS",
+    "elapsed_seconds": 21.717653900001096,
+    "llm_calls": 5,
+    "cross_sender_pollution": false,
+    "safe_abstain": false,
+    "behavior_errors": [],
+    "destructive_errors": [],
+    "initial_memories": [
+      "联系人每周二参加业余乐队排练",
+      "联系人收藏老电影海报"
+    ],
+    "working_memory": [],
+    "atomic_facts": [
+      {
+        "source_span": "乐队排练我已经退出；",
+        "kind": "persistent_change",
+        "operation_hint": "end",
+        "fact": "联系人已经退出乐队排练",
+        "constraints": [
+          "乐队排练我已经退出"
+        ]
+      },
+      {
+        "source_span": "从下月起每周六为社区无障碍电影放映制作字幕，至少坚持一年。",
+        "kind": "persistent",
+        "operation_hint": "add",
+        "fact": "联系人从下月起每周六为社区无障碍电影放映制作字幕，至少坚持一年",
+        "constraints": [
+          "从下月起每周六为社区无障碍电影放映制作字幕，至少坚持一年"
+        ]
+      }
+    ],
+    "per_fact": [
+      {
+        "atomic_fact": {
+          "source_span": "乐队排练我已经退出；",
+          "kind": "persistent_change",
+          "operation_hint": "end",
+          "fact": "联系人已经退出乐队排练",
+          "constraints": [
+            "乐队排练我已经退出"
+          ]
+        },
+        "retrieval_candidates": [
+          {
+            "index": 0,
+            "memory": "联系人每周二参加业余乐队排练",
+            "score": 0.5809313058853149
+          },
+          {
+            "index": 1,
+            "memory": "联系人收藏老电影海报",
+            "score": 0.12039440125226974
+          }
+        ],
+        "alignment": {
+          "decision": "DELETE",
+          "target_index": 0,
+          "memory": null,
+          "raw_memory": null
+        },
+        "validation": {},
+        "action": {
+          "action": "DELETE",
+          "target": "联系人每周二参加业余乐队排练",
+          "memory": null
+        },
+        "applied": true
+      },
+      {
+        "atomic_fact": {
+          "source_span": "从下月起每周六为社区无障碍电影放映制作字幕，至少坚持一年。",
+          "kind": "persistent",
+          "operation_hint": "add",
+          "fact": "联系人从下月起每周六为社区无障碍电影放映制作字幕，至少坚持一年",
+          "constraints": [
+            "从下月起每周六为社区无障碍电影放映制作字幕，至少坚持一年"
+          ]
+        },
+        "retrieval_candidates": [],
+        "alignment": {
+          "decision": "NEW",
+          "target_index": null,
+          "memory": "联系人从下月起每周六为社区无障碍电影放映制作字幕，至少坚持一年",
+          "raw_memory": "联系人从下月起每周六为社区无障碍电影放映制作字幕，至少坚持一年"
+        },
+        "validation": {
+          "schema": true,
+          "evidence": {
+            "supported": true
+          },
+          "worthiness": {
+            "memory_type": "ongoing_work",
+            "should_save": true
+          }
+        },
+        "action": {
+          "action": "ADD",
+          "memory": "联系人从下月起每周六为社区无障碍电影放映制作字幕，至少坚持一年"
+        },
+        "applied": true
+      }
+    ],
+    "final_memories": [
+      "联系人收藏老电影海报",
+      "联系人从下月起每周六为社区无障碍电影放映制作字幕，至少坚持一年"
+    ],
+    "sentinel_memories": [
+      "联系人每周二参加业余乐队排练",
+      "联系人偶尔为电影制作字幕"
+    ],
+    "expected_semantics": [
+      "old band rehearsal removed",
+      "weekly Saturday accessibility subtitles from next month for at least a year",
+      "movie-poster collection preserved"
+    ],
+    "captured_log": "OLLAMA_TIMING: {\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1671, \"started_at\": \"2026-09-25T11:56:24.892+08:00\", \"elapsed_seconds\": 8.197, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 426, \"load_duration\": 6494200, \"prompt_eval_count\": 830, \"prompt_eval_duration\": 768793000, \"eval_count\": 161, \"eval_duration\": 5316090000, \"total_duration\": 6119346200}\nOLLAMA_TIMING: {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1042, \"started_at\": \"2026-09-25T11:56:33.105+08:00\", \"elapsed_seconds\": 3.414, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 65, \"load_duration\": 6178600, \"prompt_eval_count\": 499, \"prompt_eval_duration\": 541426000, \"eval_count\": 24, \"eval_duration\": 761394000, \"total_duration\": 1346486800}\nOLLAMA_TIMING: {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1067, \"started_at\": \"2026-09-25T11:56:36.531+08:00\", \"elapsed_seconds\": 3.989, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 94, \"load_duration\": 5376100, \"prompt_eval_count\": 514, \"prompt_eval_duration\": 515167000, \"eval_count\": 43, \"eval_duration\": 1385451000, \"total_duration\": 1940619800}\nOLLAMA_TIMING: {\"stage\": \"ADD Evidence Gate\", \"prompt_chars\": 1169, \"started_at\": \"2026-09-25T11:56:40.521+08:00\", \"elapsed_seconds\": 2.88, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 19, \"load_duration\": 5652000, \"prompt_eval_count\": 644, \"prompt_eval_duration\": 615077000, \"eval_count\": 6, \"eval_duration\": 164276000, \"total_duration\": 819010800}\nOLLAMA_TIMING: {\"stage\": \"Worthiness Gate\", \"prompt_chars\": 1923, \"started_at\": \"2026-09-25T11:56:43.401+08:00\", \"elapsed_seconds\": 3.208, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 37, \"load_duration\": 6892800, \"prompt_eval_count\": 939, \"prompt_eval_duration\": 710463000, \"eval_count\": 13, \"eval_duration\": 398317000, \"total_duration\": 1150077000}\nMEMORY_V2_TIMING_SUMMARY: {\"outcome\": \"success\", \"calls\": [{\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1671, \"started_at\": \"2026-09-25T11:56:24.892+08:00\", \"elapsed_seconds\": 8.197, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 426, \"load_duration\": 6494200, \"prompt_eval_count\": 830, \"prompt_eval_duration\": 768793000, \"eval_count\": 161, \"eval_duration\": 5316090000, \"total_duration\": 6119346200}, {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1042, \"started_at\": \"2026-09-25T11:56:33.105+08:00\", \"elapsed_seconds\": 3.414, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 65, \"load_duration\": 6178600, \"prompt_eval_count\": 499, \"prompt_eval_duration\": 541426000, \"eval_count\": 24, \"eval_duration\": 761394000, \"total_duration\": 1346486800}, {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1067, \"started_at\": \"2026-09-25T11:56:36.531+08:00\", \"elapsed_seconds\": 3.989, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 94, \"load_duration\": 5376100, \"prompt_eval_count\": 514, \"prompt_eval_duration\": 515167000, \"eval_count\": 43, \"eval_duration\": 1385451000, \"total_duration\": 1940619800}, {\"stage\": \"ADD Evidence Gate\", \"prompt_chars\": 1169, \"started_at\": \"2026-09-25T11:56:40.521+08:00\", \"elapsed_seconds\": 2.88, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 19, \"load_duration\": 5652000, \"prompt_eval_count\": 644, \"prompt_eval_duration\": 615077000, \"eval_count\": 6, \"eval_duration\": 164276000, \"total_duration\": 819010800}, {\"stage\": \"Worthiness Gate\", \"prompt_chars\": 1923, \"started_at\": \"2026-09-25T11:56:43.401+08:00\", \"elapsed_seconds\": 3.208, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 37, \"load_duration\": 6892800, \"prompt_eval_count\": 939, \"prompt_eval_duration\": 710463000, \"eval_count\": 13, \"eval_duration\": 398317000, \"total_duration\": 1150077000}], \"total_llm_calls\": 5, \"stage_timings\": [{\"stage\": \"Atomic Fact Extractor\", \"call_count\": 1, \"elapsed_seconds\": 8.197}, {\"stage\": \"Fact Alignment\", \"call_count\": 2, \"elapsed_seconds\": 7.403}, {\"stage\": \"ADD Evidence Gate\", \"call_count\": 1, \"elapsed_seconds\": 2.88}, {\"stage\": \"Worthiness Gate\", \"call_count\": 1, \"elapsed_seconds\": 3.208}], \"total_llm_elapsed_seconds\": 21.688, \"total_request_elapsed_seconds\": 21.718}\n"
+  },
+  {
+    "case_id": "final_v2_16_unique_insurance_checklist_reference",
+    "category": "Working Memory unique reference",
+    "status": "PASS",
+    "elapsed_seconds": 9.45301599999948,
+    "llm_calls": 2,
+    "cross_sender_pollution": false,
+    "safe_abstain": false,
+    "behavior_errors": [],
+    "destructive_errors": [],
+    "initial_memories": [
+      "联系人正在整理家庭保险文件清单",
+      "联系人习惯在月底检查烟雾报警器"
+    ],
+    "working_memory": [
+      {
+        "role": "user",
+        "content": "家庭保险文件清单还缺两份保单编号。"
+      },
+      {
+        "role": "assistant",
+        "content": "那份清单目前还差两项信息。"
+      }
+    ],
+    "atomic_facts": [
+      {
+        "source_span": "那份清单我决定延后到明年一月再完成。",
+        "kind": "persistent",
+        "operation_hint": "add",
+        "fact": "联系人决定延后家庭保险文件清单到明年一月再完成",
+        "constraints": [
+          "那份清单",
+          "明年一月再完成"
+        ]
+      }
+    ],
+    "per_fact": [
+      {
+        "atomic_fact": {
+          "source_span": "那份清单我决定延后到明年一月再完成。",
+          "kind": "persistent",
+          "operation_hint": "add",
+          "fact": "联系人决定延后家庭保险文件清单到明年一月再完成",
+          "constraints": [
+            "那份清单",
+            "明年一月再完成"
+          ]
+        },
+        "retrieval_candidates": [
+          {
+            "index": 0,
+            "memory": "联系人正在整理家庭保险文件清单",
+            "score": 0.6251623630523682
+          }
+        ],
+        "alignment": {
+          "decision": "UPDATE",
+          "target_index": 0,
+          "memory": "联系人决定延后家庭保险文件清单到明年一月再完成",
+          "raw_memory": "联系人决定延后家庭保险文件清单到明年一月再完成"
+        },
+        "validation": {},
+        "action": {
+          "action": "UPDATE",
+          "target": "联系人正在整理家庭保险文件清单",
+          "memory": "联系人决定延后家庭保险文件清单到明年一月再完成"
+        },
+        "applied": true
+      }
+    ],
+    "final_memories": [
+      "联系人决定延后家庭保险文件清单到明年一月再完成",
+      "联系人习惯在月底检查烟雾报警器"
+    ],
+    "sentinel_memories": [
+      "联系人正在整理家庭保险文件清单",
+      "联系人准备明年更新保险"
+    ],
+    "expected_semantics": [
+      "family insurance checklist completion moved to next January",
+      "smoke-alarm habit preserved"
+    ],
+    "captured_log": "OLLAMA_TIMING: {\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1681, \"started_at\": \"2026-09-25T11:56:46.610+08:00\", \"elapsed_seconds\": 5.625, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 223, \"load_duration\": 5757000, \"prompt_eval_count\": 833, \"prompt_eval_duration\": 730443000, \"eval_count\": 85, \"eval_duration\": 2800981000, \"total_duration\": 3571420000}\nOLLAMA_TIMING: {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1048, \"started_at\": \"2026-09-25T11:56:52.250+08:00\", \"elapsed_seconds\": 3.813, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 86, \"load_duration\": 5884000, \"prompt_eval_count\": 504, \"prompt_eval_duration\": 442554000, \"eval_count\": 39, \"eval_duration\": 1257446000, \"total_duration\": 1744269600}\nMEMORY_V2_TIMING_SUMMARY: {\"outcome\": \"success\", \"calls\": [{\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1681, \"started_at\": \"2026-09-25T11:56:46.610+08:00\", \"elapsed_seconds\": 5.625, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 223, \"load_duration\": 5757000, \"prompt_eval_count\": 833, \"prompt_eval_duration\": 730443000, \"eval_count\": 85, \"eval_duration\": 2800981000, \"total_duration\": 3571420000}, {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1048, \"started_at\": \"2026-09-25T11:56:52.250+08:00\", \"elapsed_seconds\": 3.813, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 86, \"load_duration\": 5884000, \"prompt_eval_count\": 504, \"prompt_eval_duration\": 442554000, \"eval_count\": 39, \"eval_duration\": 1257446000, \"total_duration\": 1744269600}], \"total_llm_calls\": 2, \"stage_timings\": [{\"stage\": \"Atomic Fact Extractor\", \"call_count\": 1, \"elapsed_seconds\": 5.625}, {\"stage\": \"Fact Alignment\", \"call_count\": 1, \"elapsed_seconds\": 3.813}], \"total_llm_elapsed_seconds\": 9.438, \"total_request_elapsed_seconds\": 9.453}\n"
+  },
+  {
+    "case_id": "final_v2_17_ambiguous_household_documents",
+    "category": "Working Memory ambiguous reference",
+    "status": "PASS",
+    "elapsed_seconds": 5.538994599999569,
+    "llm_calls": 1,
+    "cross_sender_pollution": false,
+    "safe_abstain": false,
+    "behavior_errors": [],
+    "destructive_errors": [],
+    "initial_memories": [
+      "联系人正在编写租客维修指南",
+      "联系人正在制作家庭应急物资表",
+      "联系人喜欢听现场录音专辑"
+    ],
+    "working_memory": [
+      {
+        "role": "user",
+        "content": "租客维修指南和家庭应急物资表最近都需要补内容。"
+      },
+      {
+        "role": "assistant",
+        "content": "两份资料同时补充确实会占用不少时间。"
+      }
+    ],
+    "atomic_facts": [
+      {
+        "source_span": "那项先暂停吧，眼下实在顾不过来。",
+        "kind": "persistent_change",
+        "operation_hint": "end",
+        "fact": "联系人暂停租客维修指南和家庭应急物资表",
+        "constraints": [
+          "那项先暂停吧，眼下实在顾不过来"
+        ]
+      }
+    ],
+    "per_fact": [
+      {
+        "atomic_fact": {
+          "source_span": "那项先暂停吧，眼下实在顾不过来。",
+          "kind": "persistent_change",
+          "operation_hint": "end",
+          "fact": "联系人暂停租客维修指南和家庭应急物资表",
+          "constraints": [
+            "那项先暂停吧，眼下实在顾不过来"
+          ]
+        },
+        "retrieval_candidates": [
+          {
+            "index": 0,
+            "memory": "联系人正在编写租客维修指南",
+            "score": 0.7011630535125732
+          },
+          {
+            "index": 1,
+            "memory": "联系人正在制作家庭应急物资表",
+            "score": 0.5031895637512207
+          },
+          {
+            "index": 2,
+            "memory": "联系人喜欢听现场录音专辑",
+            "score": 0.038696348667144775
+          }
+        ],
+        "alignment": {
+          "decision": "AMBIGUOUS",
+          "target_index": null,
+          "memory": null,
+          "raw_memory": null,
+          "safety_reason": "vague reference has multiple plausible targets"
+        },
+        "validation": {},
+        "action": null,
+        "applied": false
+      }
+    ],
+    "final_memories": [
+      "联系人正在编写租客维修指南",
+      "联系人正在制作家庭应急物资表",
+      "联系人喜欢听现场录音专辑"
+    ],
+    "sentinel_memories": [
+      "联系人正在编写租客维修指南",
+      "联系人正在制作家庭应急物资表"
+    ],
+    "expected_semantics": [
+      "the complete initial set remains exact"
+    ],
+    "captured_log": "OLLAMA_TIMING: {\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1690, \"started_at\": \"2026-09-25T11:56:56.063+08:00\", \"elapsed_seconds\": 5.524, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 217, \"load_duration\": 5634400, \"prompt_eval_count\": 834, \"prompt_eval_duration\": 706983000, \"eval_count\": 83, \"eval_duration\": 2734831000, \"total_duration\": 3471810300}\nMEMORY_V2_TIMING_SUMMARY: {\"outcome\": \"success\", \"calls\": [{\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1690, \"started_at\": \"2026-09-25T11:56:56.063+08:00\", \"elapsed_seconds\": 5.524, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 217, \"load_duration\": 5634400, \"prompt_eval_count\": 834, \"prompt_eval_duration\": 706983000, \"eval_count\": 83, \"eval_duration\": 2734831000, \"total_duration\": 3471810300}], \"total_llm_calls\": 1, \"stage_timings\": [{\"stage\": \"Atomic Fact Extractor\", \"call_count\": 1, \"elapsed_seconds\": 5.524}], \"total_llm_elapsed_seconds\": 5.524, \"total_request_elapsed_seconds\": 5.539}\n"
+  },
+  {
+    "case_id": "final_v2_18_bread_crumb_knowledge_question",
+    "category": "No-op knowledge question",
+    "status": "PASS",
+    "elapsed_seconds": 5.073004899999432,
+    "llm_calls": 1,
+    "cross_sender_pollution": false,
+    "safe_abstain": false,
+    "behavior_errors": [],
+    "destructive_errors": [],
+    "initial_memories": [
+      "联系人习惯周六清洗鱼缸",
+      "联系人喜欢阅读建筑杂志"
+    ],
+    "working_memory": [],
+    "atomic_facts": [
+      {
+        "source_span": "为什么有些面包烤好后内部会出现很大的孔洞？",
+        "kind": "query",
+        "operation_hint": "none",
+        "fact": null,
+        "constraints": [
+          "为什么有些面包烤好后内部会出现很大的孔洞？"
+        ]
+      }
+    ],
+    "per_fact": [
+      {
+        "atomic_fact": {
+          "source_span": "为什么有些面包烤好后内部会出现很大的孔洞？",
+          "kind": "query",
+          "operation_hint": "none",
+          "fact": null,
+          "constraints": [
+            "为什么有些面包烤好后内部会出现很大的孔洞？"
+          ]
+        },
+        "retrieval_candidates": [],
+        "alignment": {
+          "decision": "IGNORED_NON_PERSISTENT",
+          "target_index": null,
+          "memory": null
+        },
+        "validation": {},
+        "action": null,
+        "applied": false
+      }
+    ],
+    "final_memories": [
+      "联系人习惯周六清洗鱼缸",
+      "联系人喜欢阅读建筑杂志"
+    ],
+    "sentinel_memories": [
+      "联系人学习过面包发酵",
+      "联系人养了两条金鱼"
+    ],
+    "expected_semantics": [
+      "the complete initial set remains exact"
+    ],
+    "captured_log": "OLLAMA_TIMING: {\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1641, \"started_at\": \"2026-09-25T11:57:01.602+08:00\", \"elapsed_seconds\": 5.073, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 200, \"load_duration\": 6346600, \"prompt_eval_count\": 807, \"prompt_eval_duration\": 590126000, \"eval_count\": 72, \"eval_duration\": 2368087000, \"total_duration\": 3010312200}\nMEMORY_V2_TIMING_SUMMARY: {\"outcome\": \"success\", \"calls\": [{\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1641, \"started_at\": \"2026-09-25T11:57:01.602+08:00\", \"elapsed_seconds\": 5.073, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 200, \"load_duration\": 6346600, \"prompt_eval_count\": 807, \"prompt_eval_duration\": 590126000, \"eval_count\": 72, \"eval_duration\": 2368087000, \"total_duration\": 3010312200}], \"total_llm_calls\": 1, \"stage_timings\": [{\"stage\": \"Atomic Fact Extractor\", \"call_count\": 1, \"elapsed_seconds\": 5.073}], \"total_llm_elapsed_seconds\": 5.073, \"total_request_elapsed_seconds\": 5.073}\n"
+  },
+  {
+    "case_id": "final_v2_19_sort_camping_list_request",
+    "category": "No-op one-time request",
+    "status": "PASS",
+    "elapsed_seconds": 5.261865600001329,
+    "llm_calls": 1,
+    "cross_sender_pollution": false,
+    "safe_abstain": false,
+    "behavior_errors": [],
+    "destructive_errors": [],
+    "initial_memories": [
+      "联系人每年冬天更换一次净水器滤芯",
+      "联系人偏爱亚麻材质的床品"
+    ],
+    "working_memory": [],
+    "atomic_facts": [
+      {
+        "source_span": "帮我把这张露营装备清单按重量从轻到重排一下。",
+        "kind": "request",
+        "operation_hint": "none",
+        "fact": null,
+        "constraints": [
+          "帮我把这张露营装备清单按重量从轻到重排一下"
+        ]
+      }
+    ],
+    "per_fact": [
+      {
+        "atomic_fact": {
+          "source_span": "帮我把这张露营装备清单按重量从轻到重排一下。",
+          "kind": "request",
+          "operation_hint": "none",
+          "fact": null,
+          "constraints": [
+            "帮我把这张露营装备清单按重量从轻到重排一下"
+          ]
+        },
+        "retrieval_candidates": [],
+        "alignment": {
+          "decision": "IGNORED_NON_PERSISTENT",
+          "target_index": null,
+          "memory": null
+        },
+        "validation": {},
+        "action": null,
+        "applied": false
+      }
+    ],
+    "final_memories": [
+      "联系人每年冬天更换一次净水器滤芯",
+      "联系人偏爱亚麻材质的床品"
+    ],
+    "sentinel_memories": [
+      "联系人经常整理露营装备",
+      "联系人喜欢轻量帐篷"
+    ],
+    "expected_semantics": [
+      "the complete initial set remains exact"
+    ],
+    "captured_log": "OLLAMA_TIMING: {\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1642, \"started_at\": \"2026-09-25T11:57:06.676+08:00\", \"elapsed_seconds\": 5.262, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 203, \"load_duration\": 6857800, \"prompt_eval_count\": 811, \"prompt_eval_duration\": 659599000, \"eval_count\": 78, \"eval_duration\": 2525464000, \"total_duration\": 3226459200}\nMEMORY_V2_TIMING_SUMMARY: {\"outcome\": \"success\", \"calls\": [{\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1642, \"started_at\": \"2026-09-25T11:57:06.676+08:00\", \"elapsed_seconds\": 5.262, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 203, \"load_duration\": 6857800, \"prompt_eval_count\": 811, \"prompt_eval_duration\": 659599000, \"eval_count\": 78, \"eval_duration\": 2525464000, \"total_duration\": 3226459200}], \"total_llm_calls\": 1, \"stage_timings\": [{\"stage\": \"Atomic Fact Extractor\", \"call_count\": 1, \"elapsed_seconds\": 5.262}], \"total_llm_elapsed_seconds\": 5.262, \"total_request_elapsed_seconds\": 5.262}\n"
+  },
+  {
+    "case_id": "final_v2_20_cross_sender_family_service",
+    "category": "Sender isolation",
+    "status": "PASS",
+    "elapsed_seconds": 13.730487299999368,
+    "llm_calls": 3,
+    "cross_sender_pollution": false,
+    "safe_abstain": false,
+    "behavior_errors": [],
+    "destructive_errors": [],
+    "initial_memories": [
+      "联系人每月为父亲预约一次上门理发服务",
+      "联系人喜欢收集电影首映海报"
+    ],
+    "working_memory": [],
+    "atomic_facts": [
+      {
+        "source_span": "父亲已经搬到护理院",
+        "kind": "persistent_change",
+        "operation_hint": "end",
+        "fact": "联系人父亲搬到护理院",
+        "constraints": [
+          "父亲已经搬到护理院"
+        ]
+      },
+      {
+        "source_span": "那项上门理发预约我取消了",
+        "kind": "persistent_change",
+        "operation_hint": "end",
+        "fact": "联系人取消上门理发预约",
+        "constraints": [
+          "那项上门理发预约我取消了"
+        ]
+      }
+    ],
+    "per_fact": [
+      {
+        "atomic_fact": {
+          "source_span": "父亲已经搬到护理院",
+          "kind": "persistent_change",
+          "operation_hint": "end",
+          "fact": "联系人父亲搬到护理院",
+          "constraints": [
+            "父亲已经搬到护理院"
+          ]
+        },
+        "retrieval_candidates": [
+          {
+            "index": 0,
+            "memory": "联系人每月为父亲预约一次上门理发服务",
+            "score": 0.5962933301925659
+          },
+          {
+            "index": 1,
+            "memory": "联系人喜欢收集电影首映海报",
+            "score": 0.04907387122511864
+          }
+        ],
+        "alignment": {
+          "decision": "DELETE",
+          "target_index": 0,
+          "memory": null,
+          "raw_memory": null
+        },
+        "validation": {},
+        "action": {
+          "action": "DELETE",
+          "target": "联系人每月为父亲预约一次上门理发服务",
+          "memory": null
+        },
+        "applied": true
+      },
+      {
+        "atomic_fact": {
+          "source_span": "那项上门理发预约我取消了",
+          "kind": "persistent_change",
+          "operation_hint": "end",
+          "fact": "联系人取消上门理发预约",
+          "constraints": [
+            "那项上门理发预约我取消了"
+          ]
+        },
+        "retrieval_candidates": [
+          {
+            "index": 0,
+            "memory": "联系人喜欢收集电影首映海报",
+            "score": -0.03921098634600639
+          }
+        ],
+        "alignment": {
+          "decision": "AMBIGUOUS",
+          "target_index": null,
+          "memory": null,
+          "raw_memory": "联系人取消上门理发预约",
+          "safety_reason": "destructive target lacks minimum semantic support"
+        },
+        "validation": {},
+        "action": null,
+        "applied": false
+      }
+    ],
+    "final_memories": [
+      "联系人喜欢收集电影首映海报"
+    ],
+    "sentinel_memories": [
+      "联系人每月为父亲预约一次上门理发服务",
+      "联系人喜欢收集舞台剧海报"
+    ],
+    "expected_semantics": [
+      "target no longer has the haircut appointment",
+      "target movie-poster collection remains",
+      "sentinel remains byte-for-byte unchanged"
+    ],
+    "captured_log": "OLLAMA_TIMING: {\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1643, \"started_at\": \"2026-09-25T11:57:11.938+08:00\", \"elapsed_seconds\": 6.84, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 378, \"load_duration\": 8028600, \"prompt_eval_count\": 810, \"prompt_eval_duration\": 601030000, \"eval_count\": 126, \"eval_duration\": 4151636999, \"total_duration\": 4796617800}\nOLLAMA_TIMING: {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1047, \"started_at\": \"2026-09-25T11:57:18.795+08:00\", \"elapsed_seconds\": 3.363, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 65, \"load_duration\": 9945500, \"prompt_eval_count\": 500, \"prompt_eval_duration\": 512039000, \"eval_count\": 24, \"eval_duration\": 759055000, \"total_duration\": 1316318200}\nOLLAMA_TIMING: {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1032, \"started_at\": \"2026-09-25T11:57:22.169+08:00\", \"elapsed_seconds\": 3.499, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 74, \"load_duration\": 6332900, \"prompt_eval_count\": 490, \"prompt_eval_duration\": 466044000, \"eval_count\": 30, \"eval_duration\": 944680000, \"total_duration\": 1445753000}\nMEMORY_V2_TIMING_SUMMARY: {\"outcome\": \"success\", \"calls\": [{\"stage\": \"Atomic Fact Extractor\", \"prompt_chars\": 1643, \"started_at\": \"2026-09-25T11:57:11.938+08:00\", \"elapsed_seconds\": 6.84, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 378, \"load_duration\": 8028600, \"prompt_eval_count\": 810, \"prompt_eval_duration\": 601030000, \"eval_count\": 126, \"eval_duration\": 4151636999, \"total_duration\": 4796617800}, {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1047, \"started_at\": \"2026-09-25T11:57:18.795+08:00\", \"elapsed_seconds\": 3.363, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 65, \"load_duration\": 9945500, \"prompt_eval_count\": 500, \"prompt_eval_duration\": 512039000, \"eval_count\": 24, \"eval_duration\": 759055000, \"total_duration\": 1316318200}, {\"stage\": \"Fact Alignment\", \"prompt_chars\": 1032, \"started_at\": \"2026-09-25T11:57:22.169+08:00\", \"elapsed_seconds\": 3.499, \"status\": \"success\", \"thinking_chars\": 0, \"response_chars\": 74, \"load_duration\": 6332900, \"prompt_eval_count\": 490, \"prompt_eval_duration\": 466044000, \"eval_count\": 30, \"eval_duration\": 944680000, \"total_duration\": 1445753000}], \"total_llm_calls\": 3, \"stage_timings\": [{\"stage\": \"Atomic Fact Extractor\", \"call_count\": 1, \"elapsed_seconds\": 6.84}, {\"stage\": \"Fact Alignment\", \"call_count\": 2, \"elapsed_seconds\": 6.862}], \"total_llm_elapsed_seconds\": 13.702, \"total_request_elapsed_seconds\": 13.73}\n"
+  }
+]

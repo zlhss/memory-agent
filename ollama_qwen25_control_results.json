@@ -1,0 +1,484 @@
+{
+  "model": "qwen2.5:7b-instruct",
+  "request_parameters": {
+    "stream": false,
+    "format": "json",
+    "think": false,
+    "temperature": 0
+  },
+  "http_timeout_seconds": 300,
+  "hard_stop_seconds": 60,
+  "runs_per_prompt": 5,
+  "prompt_hashes": {
+    "Relevance Gate": "d02a72fdb2d04ee93b63d33efc9fd7d9fedf0e9479fcd3100dbb2e24c4e582a6",
+    "Planner": "6ec2929150dbba7f4018703876ab46718ae88cb49582bb06e1f21323f6302e63",
+    "Memory Manager": "c89487fe5133e726016439dccd8fd6b7888d225e35cf67611c9e9ff6ed910567"
+  },
+  "initial_environment": {
+    "gpu": [
+      {
+        "vram_used_mib": 889,
+        "vram_total_mib": 8188,
+        "utilization_percent": 24
+      }
+    ],
+    "ollama_ps": "NAME    ID    SIZE    PROCESSOR    CONTEXT    UNTIL"
+  },
+  "results": [
+    {
+      "status": "success",
+      "http_status": 200,
+      "response_chars": 31,
+      "load_duration": 2942919600,
+      "prompt_eval_count": 310,
+      "prompt_eval_duration": 317655000,
+      "eval_count": 11,
+      "eval_duration": 327459000,
+      "total_duration": 3633151900,
+      "json_valid": true,
+      "error": null,
+      "elapsed_seconds": 5.693,
+      "sequence": 1,
+      "stage": "Relevance Gate",
+      "run": 1,
+      "environment_after": {
+        "gpu": [
+          {
+            "vram_used_mib": 5524,
+            "vram_total_mib": 8188,
+            "utilization_percent": 98
+          }
+        ],
+        "ollama_ps": "NAME                   ID              SIZE      PROCESSOR    CONTEXT    UNTIL              \nqwen2.5:7b-instruct    845dbda0ea48    4.7 GB    100% GPU     4096       4 minutes from now"
+      }
+    },
+    {
+      "status": "success",
+      "http_status": 200,
+      "response_chars": 31,
+      "load_duration": 8306400,
+      "prompt_eval_count": 310,
+      "prompt_eval_duration": 53110000,
+      "eval_count": 11,
+      "eval_duration": 392291000,
+      "total_duration": 463688300,
+      "json_valid": true,
+      "error": null,
+      "elapsed_seconds": 2.526,
+      "sequence": 2,
+      "stage": "Relevance Gate",
+      "run": 2,
+      "environment_after": {
+        "gpu": [
+          {
+            "vram_used_mib": 5524,
+            "vram_total_mib": 8188,
+            "utilization_percent": 98
+          }
+        ],
+        "ollama_ps": "NAME                   ID              SIZE      PROCESSOR    CONTEXT    UNTIL              \nqwen2.5:7b-instruct    845dbda0ea48    4.7 GB    100% GPU     4096       4 minutes from now"
+      }
+    },
+    {
+      "status": "success",
+      "http_status": 200,
+      "response_chars": 31,
+      "load_duration": 5296600,
+      "prompt_eval_count": 310,
+      "prompt_eval_duration": 67160000,
+      "eval_count": 11,
+      "eval_duration": 450369000,
+      "total_duration": 531467600,
+      "json_valid": true,
+      "error": null,
+      "elapsed_seconds": 2.624,
+      "sequence": 3,
+      "stage": "Relevance Gate",
+      "run": 3,
+      "environment_after": {
+        "gpu": [
+          {
+            "vram_used_mib": 5521,
+            "vram_total_mib": 8188,
+            "utilization_percent": 57
+          }
+        ],
+        "ollama_ps": "NAME                   ID              SIZE      PROCESSOR    CONTEXT    UNTIL              \nqwen2.5:7b-instruct    845dbda0ea48    4.7 GB    100% GPU     4096       4 minutes from now"
+      }
+    },
+    {
+      "status": "success",
+      "http_status": 200,
+      "response_chars": 31,
+      "load_duration": 4892100,
+      "prompt_eval_count": 310,
+      "prompt_eval_duration": 60026000,
+      "eval_count": 11,
+      "eval_duration": 360500000,
+      "total_duration": 435592200,
+      "json_valid": true,
+      "error": null,
+      "elapsed_seconds": 2.495,
+      "sequence": 4,
+      "stage": "Relevance Gate",
+      "run": 4,
+      "environment_after": {
+        "gpu": [
+          {
+            "vram_used_mib": 5520,
+            "vram_total_mib": 8188,
+            "utilization_percent": 98
+          }
+        ],
+        "ollama_ps": "NAME                   ID              SIZE      PROCESSOR    CONTEXT    UNTIL              \nqwen2.5:7b-instruct    845dbda0ea48    4.7 GB    100% GPU     4096       4 minutes from now"
+      }
+    },
+    {
+      "status": "success",
+      "http_status": 200,
+      "response_chars": 31,
+      "load_duration": 4211600,
+      "prompt_eval_count": 310,
+      "prompt_eval_duration": 53354000,
+      "eval_count": 11,
+      "eval_duration": 394485000,
+      "total_duration": 460242500,
+      "json_valid": true,
+      "error": null,
+      "elapsed_seconds": 2.538,
+      "sequence": 5,
+      "stage": "Relevance Gate",
+      "run": 5,
+      "environment_after": {
+        "gpu": [
+          {
+            "vram_used_mib": 5525,
+            "vram_total_mib": 8188,
+            "utilization_percent": 98
+          }
+        ],
+        "ollama_ps": "NAME                   ID              SIZE      PROCESSOR    CONTEXT    UNTIL              \nqwen2.5:7b-instruct    845dbda0ea48    4.7 GB    100% GPU     4096       4 minutes from now"
+      }
+    },
+    {
+      "status": "success",
+      "http_status": 200,
+      "response_chars": 92,
+      "load_duration": 6179000,
+      "prompt_eval_count": 254,
+      "prompt_eval_duration": 258093000,
+      "eval_count": 42,
+      "eval_duration": 1357053000,
+      "total_duration": 1646571100,
+      "json_valid": true,
+      "error": null,
+      "elapsed_seconds": 3.732,
+      "sequence": 6,
+      "stage": "Planner",
+      "run": 1,
+      "environment_after": {
+        "gpu": [
+          {
+            "vram_used_mib": 5525,
+            "vram_total_mib": 8188,
+            "utilization_percent": 98
+          }
+        ],
+        "ollama_ps": "NAME                   ID              SIZE      PROCESSOR    CONTEXT    UNTIL              \nqwen2.5:7b-instruct    845dbda0ea48    4.7 GB    100% GPU     4096       4 minutes from now"
+      }
+    },
+    {
+      "status": "success",
+      "http_status": 200,
+      "response_chars": 92,
+      "load_duration": 5944700,
+      "prompt_eval_count": 254,
+      "prompt_eval_duration": 68746000,
+      "eval_count": 42,
+      "eval_duration": 1472299000,
+      "total_duration": 1573577200,
+      "json_valid": true,
+      "error": null,
+      "elapsed_seconds": 3.627,
+      "sequence": 7,
+      "stage": "Planner",
+      "run": 2,
+      "environment_after": {
+        "gpu": [
+          {
+            "vram_used_mib": 5525,
+            "vram_total_mib": 8188,
+            "utilization_percent": 98
+          }
+        ],
+        "ollama_ps": "NAME                   ID              SIZE      PROCESSOR    CONTEXT    UNTIL              \nqwen2.5:7b-instruct    845dbda0ea48    4.7 GB    100% GPU     4096       4 minutes from now"
+      }
+    },
+    {
+      "status": "success",
+      "http_status": 200,
+      "response_chars": 92,
+      "load_duration": 8069800,
+      "prompt_eval_count": 254,
+      "prompt_eval_duration": 66912000,
+      "eval_count": 42,
+      "eval_duration": 1472953000,
+      "total_duration": 1555868900,
+      "json_valid": true,
+      "error": null,
+      "elapsed_seconds": 3.622,
+      "sequence": 8,
+      "stage": "Planner",
+      "run": 3,
+      "environment_after": {
+        "gpu": [
+          {
+            "vram_used_mib": 5531,
+            "vram_total_mib": 8188,
+            "utilization_percent": 84
+          }
+        ],
+        "ollama_ps": "NAME                   ID              SIZE      PROCESSOR    CONTEXT    UNTIL              \nqwen2.5:7b-instruct    845dbda0ea48    4.7 GB    100% GPU     4096       4 minutes from now"
+      }
+    },
+    {
+      "status": "success",
+      "http_status": 200,
+      "response_chars": 92,
+      "load_duration": 4394200,
+      "prompt_eval_count": 254,
+      "prompt_eval_duration": 67253000,
+      "eval_count": 42,
+      "eval_duration": 1465901000,
+      "total_duration": 1544274800,
+      "json_valid": true,
+      "error": null,
+      "elapsed_seconds": 3.616,
+      "sequence": 9,
+      "stage": "Planner",
+      "run": 4,
+      "environment_after": {
+        "gpu": [
+          {
+            "vram_used_mib": 5527,
+            "vram_total_mib": 8188,
+            "utilization_percent": 97
+          }
+        ],
+        "ollama_ps": "NAME                   ID              SIZE      PROCESSOR    CONTEXT    UNTIL              \nqwen2.5:7b-instruct    845dbda0ea48    4.7 GB    100% GPU     4096       4 minutes from now"
+      }
+    },
+    {
+      "status": "success",
+      "http_status": 200,
+      "response_chars": 92,
+      "load_duration": 4833000,
+      "prompt_eval_count": 254,
+      "prompt_eval_duration": 68564000,
+      "eval_count": 42,
+      "eval_duration": 1420057000,
+      "total_duration": 1500839200,
+      "json_valid": true,
+      "error": null,
+      "elapsed_seconds": 3.575,
+      "sequence": 10,
+      "stage": "Planner",
+      "run": 5,
+      "environment_after": {
+        "gpu": [
+          {
+            "vram_used_mib": 5519,
+            "vram_total_mib": 8188,
+            "utilization_percent": 98
+          }
+        ],
+        "ollama_ps": "NAME                   ID              SIZE      PROCESSOR    CONTEXT    UNTIL              \nqwen2.5:7b-instruct    845dbda0ea48    4.7 GB    100% GPU     4096       4 minutes from now"
+      }
+    },
+    {
+      "status": "success",
+      "http_status": 200,
+      "response_chars": 141,
+      "load_duration": 10886000,
+      "prompt_eval_count": 2056,
+      "prompt_eval_duration": 1443152000,
+      "eval_count": 39,
+      "eval_duration": 1280484000,
+      "total_duration": 2765758100,
+      "json_valid": true,
+      "error": null,
+      "elapsed_seconds": 4.819,
+      "sequence": 11,
+      "stage": "Memory Manager",
+      "run": 1,
+      "environment_after": {
+        "gpu": [
+          {
+            "vram_used_mib": 5527,
+            "vram_total_mib": 8188,
+            "utilization_percent": 98
+          }
+        ],
+        "ollama_ps": "NAME                   ID              SIZE      PROCESSOR    CONTEXT    UNTIL              \nqwen2.5:7b-instruct    845dbda0ea48    4.7 GB    100% GPU     4096       4 minutes from now"
+      }
+    },
+    {
+      "status": "success",
+      "http_status": 200,
+      "response_chars": 141,
+      "load_duration": 5018800,
+      "prompt_eval_count": 2056,
+      "prompt_eval_duration": 78358000,
+      "eval_count": 39,
+      "eval_duration": 1410114000,
+      "total_duration": 1523496500,
+      "json_valid": true,
+      "error": null,
+      "elapsed_seconds": 3.591,
+      "sequence": 12,
+      "stage": "Memory Manager",
+      "run": 2,
+      "environment_after": {
+        "gpu": [
+          {
+            "vram_used_mib": 5527,
+            "vram_total_mib": 8188,
+            "utilization_percent": 83
+          }
+        ],
+        "ollama_ps": "NAME                   ID              SIZE      PROCESSOR    CONTEXT    UNTIL              \nqwen2.5:7b-instruct    845dbda0ea48    4.7 GB    100% GPU     4096       4 minutes from now"
+      }
+    },
+    {
+      "status": "success",
+      "http_status": 200,
+      "response_chars": 141,
+      "load_duration": 6103900,
+      "prompt_eval_count": 2056,
+      "prompt_eval_duration": 79930000,
+      "eval_count": 39,
+      "eval_duration": 1391599000,
+      "total_duration": 1501528600,
+      "json_valid": true,
+      "error": null,
+      "elapsed_seconds": 3.552,
+      "sequence": 13,
+      "stage": "Memory Manager",
+      "run": 3,
+      "environment_after": {
+        "gpu": [
+          {
+            "vram_used_mib": 5527,
+            "vram_total_mib": 8188,
+            "utilization_percent": 98
+          }
+        ],
+        "ollama_ps": "NAME                   ID              SIZE      PROCESSOR    CONTEXT    UNTIL              \nqwen2.5:7b-instruct    845dbda0ea48    4.7 GB    100% GPU     4096       4 minutes from now"
+      }
+    },
+    {
+      "status": "success",
+      "http_status": 200,
+      "response_chars": 141,
+      "load_duration": 5251700,
+      "prompt_eval_count": 2056,
+      "prompt_eval_duration": 81312000,
+      "eval_count": 39,
+      "eval_duration": 1428849000,
+      "total_duration": 1537126000,
+      "json_valid": true,
+      "error": null,
+      "elapsed_seconds": 3.618,
+      "sequence": 14,
+      "stage": "Memory Manager",
+      "run": 4,
+      "environment_after": {
+        "gpu": [
+          {
+            "vram_used_mib": 5527,
+            "vram_total_mib": 8188,
+            "utilization_percent": 98
+          }
+        ],
+        "ollama_ps": "NAME                   ID              SIZE      PROCESSOR    CONTEXT    UNTIL              \nqwen2.5:7b-instruct    845dbda0ea48    4.7 GB    100% GPU     4096       4 minutes from now"
+      }
+    },
+    {
+      "status": "success",
+      "http_status": 200,
+      "response_chars": 141,
+      "load_duration": 4351600,
+      "prompt_eval_count": 2056,
+      "prompt_eval_duration": 75616000,
+      "eval_count": 39,
+      "eval_duration": 1377239000,
+      "total_duration": 1479866400,
+      "json_valid": true,
+      "error": null,
+      "elapsed_seconds": 3.529,
+      "sequence": 15,
+      "stage": "Memory Manager",
+      "run": 5,
+      "environment_after": {
+        "gpu": [
+          {
+            "vram_used_mib": 5527,
+            "vram_total_mib": 8188,
+            "utilization_percent": 86
+          }
+        ],
+        "ollama_ps": "NAME                   ID              SIZE      PROCESSOR    CONTEXT    UNTIL              \nqwen2.5:7b-instruct    845dbda0ea48    4.7 GB    100% GPU     4096       4 minutes from now"
+      }
+    }
+  ],
+  "summary": {
+    "attempted": 15,
+    "completed": 15,
+    "json_valid": 15,
+    "average_latency_seconds": 3.544,
+    "median_latency_seconds": 3.591,
+    "p95_latency_seconds": 5.693,
+    "max_latency_seconds": 5.693,
+    "over_10_seconds": 0,
+    "over_60_seconds": 0,
+    "timeout_count": 0,
+    "error_count": 0,
+    "loaded_vram_used_mib_min": 5519,
+    "loaded_vram_used_mib_max": 5531,
+    "stage_summaries": [
+      {
+        "stage": "Relevance Gate",
+        "completed": 5,
+        "average_latency_seconds": 3.175,
+        "median_latency_seconds": 2.538,
+        "p95_latency_seconds": 5.693,
+        "max_latency_seconds": 5.693,
+        "over_10_seconds": 0,
+        "over_60_seconds": 0,
+        "json_valid": 5
+      },
+      {
+        "stage": "Planner",
+        "completed": 5,
+        "average_latency_seconds": 3.634,
+        "median_latency_seconds": 3.622,
+        "p95_latency_seconds": 3.732,
+        "max_latency_seconds": 3.732,
+        "over_10_seconds": 0,
+        "over_60_seconds": 0,
+        "json_valid": 5
+      },
+      {
+        "stage": "Memory Manager",
+        "completed": 5,
+        "average_latency_seconds": 3.822,
+        "median_latency_seconds": 3.591,
+        "p95_latency_seconds": 4.819,
+        "max_latency_seconds": 4.819,
+        "over_10_seconds": 0,
+        "over_60_seconds": 0,
+        "json_valid": 5
+      }
+    ]
+  }
+}
